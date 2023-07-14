@@ -6,7 +6,10 @@
   "rules": {
     "linebreak-style": 0,
     "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "global-require": "off"
   },
   "ignorePatterns": ["next.config.js", "postcss.config.js"]
 }
