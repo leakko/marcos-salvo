@@ -21,7 +21,7 @@ import { usePathname, useRouter } from 'next/navigation';
 
 export function DropdownMenuRadio() {
   const path = usePathname();
-  const value = path.replace('/', '');
+  const value = path.replace('/', '') || 'about-me';
   const router = useRouter();
   const onValueSelected = (selectedPath: string) => {
     router.push(selectedPath);
