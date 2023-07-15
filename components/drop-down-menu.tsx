@@ -13,6 +13,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuPortal,
 } from '@/components/ui/dropdown-menu.primitives';
 import { cn } from '@/lib/utils';
 
@@ -27,17 +28,19 @@ export function DropdownMenuRadio() {
             <HamburgerMenuIcon />
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56" align="end">
-          <DropdownMenuRadioGroup value={section} onValueChange={setSection}>
-            <DropdownMenuRadioItem value="about-me" className={cn('hover:cursor-pointer')}>About me</DropdownMenuRadioItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuRadioItem value="work-exprience" className={cn('hover:cursor-pointer')}>Work Experience</DropdownMenuRadioItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuRadioItem value="education" className={cn('hover:cursor-pointer')}>Education</DropdownMenuRadioItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuRadioItem value="technologies" className={cn('hover:cursor-pointer')}>Technologies</DropdownMenuRadioItem>
-          </DropdownMenuRadioGroup>
-        </DropdownMenuContent>
+        <DropdownMenuPortal>
+          <DropdownMenuContent className="w-56" align="end">
+            <DropdownMenuRadioGroup value={section} onValueChange={setSection}>
+              <DropdownMenuRadioItem value="about-me" className={cn('hover:cursor-pointer')}>About me</DropdownMenuRadioItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuRadioItem value="work-exprience" className={cn('hover:cursor-pointer')}>Work Experience</DropdownMenuRadioItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuRadioItem value="education" className={cn('hover:cursor-pointer')}>Education</DropdownMenuRadioItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuRadioItem value="technologies" className={cn('hover:cursor-pointer')}>Technologies</DropdownMenuRadioItem>
+            </DropdownMenuRadioGroup>
+          </DropdownMenuContent>
+        </DropdownMenuPortal>
       </DropdownMenu>
     </div>
   );
