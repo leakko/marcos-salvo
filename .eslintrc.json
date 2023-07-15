@@ -11,7 +11,8 @@
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "global-require": "off",
     "react/prop-types": "off",
-    "@typescript-eslint/no-use-before-define": "off"
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/require-default-props": "off"
   },
   "ignorePatterns": ["next.config.js", "postcss.config.js"]
 }
