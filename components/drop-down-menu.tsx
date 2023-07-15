@@ -28,7 +28,7 @@ export function DropdownMenuRadio() {
   };
 
   return (
-    <div className={cn('flex', 'justify-end', 'text-primary')}>
+    <div className={cn('flex', 'justify-end', 'text-primary', 'sticky top-3')}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button type="button" className={cn('IconButton', 'bg-white', 'p-3', 'rounded-full')} aria-label="Dropdown menu button">
