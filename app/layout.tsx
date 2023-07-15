@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import './globals.css';
 import { Inter } from 'next/font/google';
 
@@ -15,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, 'bg-primary', 'text-white')}>
+        <div className={cn('max-w-7xl', 'mx-auto', 'my-8', 'w-screen', 'px-3')}>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
