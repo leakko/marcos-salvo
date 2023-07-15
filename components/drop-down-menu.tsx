@@ -16,9 +16,16 @@ import {
   DropdownMenuPortal,
 } from '@/components/ui/dropdown-menu.primitives';
 import { cn } from '@/lib/utils';
+import { SectionContext } from '@/context/section.context';
+import { sections } from '@/data/sections';
 
 export function DropdownMenuRadio() {
-  const [section, setSection] = React.useState('about-me');
+  const { section, setSectionByName, navigateToSectionByName } = React.useContext(SectionContext);
+
+  const onDropdownItemSelected = (name: string) => {
+    setSectionByName(name);
+    navigateToSectionByName(name);
+  };
 
   return (
     <div className={cn('flex', 'justify-end', 'text-primary')}>
@@ -30,14 +37,17 @@ export function DropdownMenuRadio() {
         </DropdownMenuTrigger>
         <DropdownMenuPortal>
           <DropdownMenuContent className="w-56" align="end">
-            <DropdownMenuRadioGroup value={section} onValueChange={setSection}>
-              <DropdownMenuRadioItem value="about-me" className={cn('hover:cursor-pointer')}>About me</DropdownMenuRadioItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuRadioItem value="work-exprience" className={cn('hover:cursor-pointer')}>Work Experience</DropdownMenuRadioItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuRadioItem value="education" className={cn('hover:cursor-pointer')}>Education</DropdownMenuRadioItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuRadioItem value="technologies" className={cn('hover:cursor-pointer')}>Technologies</DropdownMenuRadioItem>
+            <DropdownMenuRadioGroup value={section.name} onValueChange={onDropdownItemSelected}>
+              {
+                sections.map((sect) => (
+                  <div key={sect.id}>
+                    <DropdownMenuRadioItem value={sect.name} className={cn('hover:cursor-pointer')}>
+                      {sect.publicName}
+                    </DropdownMenuRadioItem>
+                    <DropdownMenuSeparator />
+                  </div>
+                ))
+              }
             </DropdownMenuRadioGroup>
           </DropdownMenuContent>
         </DropdownMenuPortal>
