@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import { DropdownMenuCheckboxItemProps } from '@radix-ui/react-dropdown-menu';
 
 import {
   HamburgerMenuIcon,
@@ -25,7 +24,7 @@ export function DropdownMenuRadio() {
     <div className={cn('flex', 'justify-end')}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <button className={cn('IconButton', 'bg-white', 'p-3', 'rounded-full')} aria-label="Customise options">
+          <button type="button" className={cn('IconButton', 'bg-white', 'p-3', 'rounded-full')} aria-label="Dropdown menu button">
             <HamburgerMenuIcon />
           </button>
         </DropdownMenuTrigger>
