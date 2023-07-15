@@ -21,7 +21,7 @@ export function DropdownMenuRadio() {
   const [section, setSection] = React.useState('about-me');
 
   return (
-    <div className={cn('flex', 'justify-end')}>
+    <div className={cn('flex', 'justify-end', 'text-primary')}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button type="button" className={cn('IconButton', 'bg-white', 'p-3', 'rounded-full')} aria-label="Dropdown menu button">
