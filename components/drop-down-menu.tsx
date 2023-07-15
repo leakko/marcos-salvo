@@ -16,17 +16,16 @@ import {
   DropdownMenuPortal,
 } from '@/components/ui/dropdown-menu.primitives';
 import { cn } from '@/lib/utils';
-import { SectionContext } from '@/context/section.context';
 import { sections } from '@/data/sections';
+import { usePathname, useRouter } from 'next/navigation';
 
 export function DropdownMenuRadio() {
-  const { section, setSectionByName, navigateToSectionByName } = React.useContext(SectionContext);
-
-  const onDropdownItemSelected = (name: string) => {
-    setSectionByName(name);
-    navigateToSectionByName(name);
+  const path = usePathname();
+  const value = path.replace('/', '');
+  const router = useRouter();
+  const onValueSelected = (selectedPath: string) => {
+    router.push(selectedPath);
   };
-
   return (
     <div className={cn('flex', 'justify-end', 'text-primary', 'sticky top-3')}>
       <DropdownMenu>
@@ -37,12 +36,12 @@ export function DropdownMenuRadio() {
         </DropdownMenuTrigger>
         <DropdownMenuPortal>
           <DropdownMenuContent className="w-56" align="end">
-            <DropdownMenuRadioGroup value={section.name} onValueChange={onDropdownItemSelected}>
+            <DropdownMenuRadioGroup value={value} onValueChange={onValueSelected}>
               {
                 sections.map((sect) => (
                   <div key={sect.id}>
-                    <DropdownMenuRadioItem value={sect.name} className={cn('hover:cursor-pointer')}>
-                      {sect.publicName}
+                    <DropdownMenuRadioItem value={sect.path} className={cn('hover:cursor-pointer')}>
+                      {sect.name}
                     </DropdownMenuRadioItem>
                     <DropdownMenuSeparator />
                   </div>

@@ -1,19 +1,13 @@
 export interface Section {
   id: number;
+  path: SectionPathEnum;
   name: string;
-  publicName: string;
   description: string;
 }
 
-export enum SectionNameEnum {
+export enum SectionPathEnum {
   aboutMe = 'about-me',
   workExperience = 'work-experience',
   education = 'education',
   skills = 'skills',
-}
-
-export interface SectionProviderValue {
-  section: Section;
-  setSectionByName: (sectionName: string) => void;
-  navigateToSectionByName: (sectionName: string) => void;
 }

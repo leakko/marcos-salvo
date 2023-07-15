@@ -1,22 +1,11 @@
-'use client';
-
-import { SectionContext } from '@/context/section.context';
-import React, { useEffect } from 'react';
+import MySection from '@/components/my-section';
+import { getSectionFromPath } from '@/lib/utils';
+import { Section } from '@/models/section';
+import React from 'react';
 
 export default function Home() {
-  const { section, setSectionByName, navigateToSectionByName } = React.useContext(SectionContext);
-  useEffect(() => {
-    setSectionByName('about-me');
-  }, [setSectionByName, navigateToSectionByName]);
-
+  const section = getSectionFromPath('about-me');
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-2xl font-bold text-center">
-          {section.publicName}
-          <br />
-        </h1>
-      </div>
-    </main>
+    <MySection section={(section as Section)} />
   );
 }
