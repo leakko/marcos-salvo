@@ -9,7 +9,6 @@ import {
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
@@ -18,7 +17,7 @@ import {
 import { cn } from '@/lib/utils';
 
 export function DropdownMenuRadio() {
-  const [position, setPosition] = React.useState('bottom');
+  const [section, setSection] = React.useState('about-me');
 
   return (
     <div className={cn('flex', 'justify-end')}>
@@ -28,13 +27,15 @@ export function DropdownMenuRadio() {
             <HamburgerMenuIcon />
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56">
-          <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-            <DropdownMenuRadioItem value="top" className={cn('hover:cursor-pointer')}>Top</DropdownMenuRadioItem>
-            <DropdownMenuRadioItem value="bottom" className={cn('hover:cursor-pointer')}>Bottom</DropdownMenuRadioItem>
-            <DropdownMenuRadioItem value="right" className={cn('hover:cursor-pointer')}>Right</DropdownMenuRadioItem>
+        <DropdownMenuContent className="w-56" align="end">
+          <DropdownMenuRadioGroup value={section} onValueChange={setSection}>
+            <DropdownMenuRadioItem value="about-me" className={cn('hover:cursor-pointer')}>About me</DropdownMenuRadioItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuRadioItem value="work-exprience" className={cn('hover:cursor-pointer')}>Work Experience</DropdownMenuRadioItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuRadioItem value="education" className={cn('hover:cursor-pointer')}>Education</DropdownMenuRadioItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuRadioItem value="technologies" className={cn('hover:cursor-pointer')}>Technologies</DropdownMenuRadioItem>
           </DropdownMenuRadioGroup>
         </DropdownMenuContent>
       </DropdownMenu>
