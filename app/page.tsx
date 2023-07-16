@@ -1,11 +1,8 @@
-import MySection from '@/components/my-section';
-import { getSectionFromPath } from '@/lib/utils';
-import { Section } from '@/models/section';
 import React from 'react';
+import { AboutMe } from '@/components/about-me';
 
-export default function Home() {
-  const section = getSectionFromPath('about-me');
+export default function Page() {
   return (
-    <MySection section={(section as Section)} />
+    <AboutMe />
   );
 }

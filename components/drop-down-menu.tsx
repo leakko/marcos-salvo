@@ -27,7 +27,7 @@ export function DropdownMenuRadio() {
     router.push(selectedPath);
   };
   return (
-    <div className={cn('flex', 'justify-end', 'text-primary', 'sticky top-3')}>
+    <nav className={cn('flex', 'justify-end', 'text-primary', 'sticky top-3')}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button type="button" className={cn('IconButton', 'bg-white', 'p-3', 'rounded-full')} aria-label="Dropdown menu button">
@@ -51,6 +51,6 @@ export function DropdownMenuRadio() {
           </DropdownMenuContent>
         </DropdownMenuPortal>
       </DropdownMenu>
-    </div>
+    </nav>
   );
 }
