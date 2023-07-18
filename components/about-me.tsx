@@ -13,11 +13,14 @@ export function AboutMe() {
       <div className={cn('relative w-32 lg:w-80 h-32 lg:h-80')}>
         <Image
           src={avatar}
-          alt="Javascript logo"
+          alt="Toon avatar"
           fill
           sizes="(min-width: 1024px) 20rem, 8rem"
           priority
           className={cn('rounded-full')}
+          style={{
+            objectFit: 'cover',
+          }}
         />
       </div>
       <h1 className={cn('lg:text-5xl text-lg font-bold text-center my-2 lg:my-5 lg:mt-0')}>Hi, I&#39;m Marcos.</h1>
