@@ -12,7 +12,8 @@
     "global-require": "off",
     "react/prop-types": "off",
     "@typescript-eslint/no-use-before-define": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "jsx-a11y/heading-has-content": "off",
   },
   "ignorePatterns": ["next.config.js", "postcss.config.js"]
 }

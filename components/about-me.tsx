@@ -1,15 +1,14 @@
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import avatar from '@/assets/img/avatar.webp';
-import TypescriptLogo from '@/assets/img/typescript-logo.webp';
 import JavascriptLogo from '@/assets/img/javascript-logo.webp';
 import AngularLogo from '@/assets/img/angular-logo.webp';
 import ReduxLogo from '@/assets/img/redux-logo.webp';
-import RxjsLogo from '@/assets/img/rxjs-logo.webp';
+import { SkillCard } from './skill-card';
 
 export function AboutMe() {
   return (
-    <main className={cn('h-[80vh] flex flex-col items-center')}>
+    <main className={cn('flex flex-col items-center')}>
       <div className={cn('relative w-32 lg:w-80 h-32 lg:h-80')}>
         <Image
           src={avatar}
@@ -29,12 +28,73 @@ export function AboutMe() {
         {' '}
         developer specialized in
       </h2>
-      <div className={cn('flex justify-center flex-wrap items-center my-3')}>
-        <Image src={TypescriptLogo} alt="Typescript logo" width="80" height="80" />
-        <Image src={JavascriptLogo} alt="Javascript logo" width="80" height="80" className={cn('ml-5 rounded mr-0')} />
-        <Image src={AngularLogo} alt="Angular logo" width="100" height="100" />
-        <Image src={ReduxLogo} alt="Redux logo" width="80" height="80" />
-        <Image src={RxjsLogo} alt="Rxjs logo" width="80" height="80" className={cn('mx-5')} />
+      <div className={cn('flex justify-center flex-wrap items-start my-3')}>
+        <SkillCard title="Angular" level={85} dialog="" icon={AngularLogo}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
+            <strong>Two years of experience</strong>
+            {' '}
+            as
+            {' '}
+            <strong>Angular</strong>
+            {' '}
+            frontend developer.
+          </p>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
+            Currently working with
+            {' '}
+            <strong>Angular 14</strong>
+            {' '}
+            as internal frontend developer in
+            {' '}
+            <strong>Vodafone</strong>
+            .
+          </p>
+        </SkillCard>
+        <SkillCard title="JavaScript" level={75} dialog="" icon={JavascriptLogo}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
+            <strong>Strong foundations</strong>
+            {' '}
+            in JavaScript thanks to:
+            <ul className={cn('list-disc ml-5')}>
+              <li className={cn('mb-3')}>
+                Exceling in the
+                {' '}
+                <strong>Frontend/JS</strong>
+                {' '}
+                related subjects of my
+                {' '}
+                <strong>Software Engineering degree</strong>
+              </li>
+              <li>
+                Working
+                {' '}
+                <strong>professionally</strong>
+                {' '}
+                with JavaScript for more than 2 years.
+              </li>
+            </ul>
+          </p>
+        </SkillCard>
+        <SkillCard title="Redux/RxJs" level={60} dialog="" icon={ReduxLogo}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
+            Highly skilled in
+            {' '}
+            <strong>state management</strong>
+            {' '}
+            and
+            {' '}
+            <strong>reactive programming</strong>
+            {' '}
+            thanks to intensive use of
+            {' '}
+            <strong>NgRx</strong>
+            {' '}
+            (Redux for Angular) and
+            {' '}
+            <strong>RxJs</strong>
+            .
+          </p>
+        </SkillCard>
       </div>
     </main>
   );
