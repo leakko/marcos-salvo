@@ -56,7 +56,7 @@ export function AboutMe() {
             {' '}
             in JavaScript thanks to:
           </p>
-          <ul className={cn('list-disc ml-5')}>
+          <ul className={cn('list-disc ml-5 lg:text-base text-sm')}>
             <li className={cn('mb-3')}>
               Exceling in the
               {' '}
