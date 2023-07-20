@@ -55,25 +55,25 @@ export function AboutMe() {
             <strong>Strong foundations</strong>
             {' '}
             in JavaScript thanks to:
-            <ul className={cn('list-disc ml-5')}>
-              <li className={cn('mb-3')}>
-                Exceling in the
-                {' '}
-                <strong>Frontend/JS</strong>
-                {' '}
-                related subjects of my
-                {' '}
-                <strong>Software Engineering degree</strong>
-              </li>
-              <li>
-                Working
-                {' '}
-                <strong>professionally</strong>
-                {' '}
-                with JavaScript for more than 2 years.
-              </li>
-            </ul>
           </p>
+          <ul className={cn('list-disc ml-5')}>
+            <li className={cn('mb-3')}>
+              Exceling in the
+              {' '}
+              <strong>Frontend/JS</strong>
+              {' '}
+              related subjects of my
+              {' '}
+              <strong>Software Engineering degree</strong>
+            </li>
+            <li>
+              Working
+              {' '}
+              <strong>professionally</strong>
+              {' '}
+              with JavaScript for more than 2 years.
+            </li>
+          </ul>
         </SkillCard>
         <SkillCard title="Redux/RxJs" level={60} dialog="" icon={ReduxLogo}>
           <p className={cn('mb-2 lg:text-base text-sm')}>
