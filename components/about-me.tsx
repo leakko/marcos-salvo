@@ -5,6 +5,7 @@ import JavascriptLogo from '@/assets/img/javascript-logo.webp';
 import AngularLogo from '@/assets/img/angular-logo.webp';
 import ReduxLogo from '@/assets/img/redux-logo.webp';
 import { SkillCard } from './skill-card';
+import { CardsGrid } from './cards-grid';
 
 export function AboutMe() {
   return (
@@ -16,10 +17,7 @@ export function AboutMe() {
           fill
           sizes="(min-width: 1024px) 20rem, 8rem"
           priority
-          className={cn('rounded-full')}
-          style={{
-            objectFit: 'cover',
-          }}
+          className={cn('rounded-full', 'object-contain')}
         />
       </div>
       <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Hi, I&#39;m Marcos.</h1>
@@ -28,7 +26,7 @@ export function AboutMe() {
         {' '}
         developer specialized in
       </h2>
-      <div className={cn('flex', 'justify-center', 'flex-wrap', 'items-start', 'my-3')}>
+      <CardsGrid>
         <SkillCard title="Angular" level={85} dialog="" icon={AngularLogo}>
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Two years of experience</strong>
@@ -96,7 +94,7 @@ export function AboutMe() {
             .
           </p>
         </SkillCard>
-      </div>
+      </CardsGrid>
     </main>
   );
 }
