@@ -36,10 +36,10 @@ export function ProgressCard({
           <Progress value={level} className={cn('bg-[rgba(25,25,25,0.4)]')} />
         </div>
       </CardHeader>
-      <CardContent>
+      <CardContent className={cn(!children && 'pb-0')}>
         {children}
       </CardContent>
-      <CardFooter>
+      <CardFooter className={cn(!children && 'pb-2')}>
         {dialog}
       </CardFooter>
     </Card>
