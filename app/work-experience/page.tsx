@@ -22,7 +22,7 @@ export default function () {
       </div>
       <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Work Experience</h1>
       <CardsGrid>
-        <ExperienceCard title="Vodafone" startDate="08/22" dialog="" icon={vodafoneLogo} titleUrl="https://www.vodafone.es/c/conocenos/es/vodafone-espana/trabaja-con-nosotros/">
+        <ExperienceCard title="Frontend Developer" startDate="08/22" dialog="" icon={vodafoneLogo} company="Vodafone" companyUrl="https://www.vodafone.es/c/conocenos/es/vodafone-espana/trabaja-con-nosotros/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
@@ -71,7 +71,7 @@ export default function () {
             </li>
           </ul>
         </ExperienceCard>
-        <ExperienceCard title="Geograma" startDate="01/22" finishDate="06/22" dialog="" icon={geogramaLogo} titleUrl="https://www.geograma.com/">
+        <ExperienceCard title="Frontend Developer" startDate="01/22" finishDate="06/22" dialog="" icon={geogramaLogo} company="Geograma" companyUrl="https://www.geograma.com/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
@@ -113,7 +113,7 @@ export default function () {
             </li>
           </ul>
         </ExperienceCard>
-        <ExperienceCard title="Guadaltech" startDate="10/21" finishDate="01/22" dialog="" icon={guadaltechLogo} titleUrl="https://www.guadaltech.es/">
+        <ExperienceCard title="Frontend Developer" startDate="10/21" finishDate="01/22" dialog="" icon={guadaltechLogo} company="Guadaltech" companyUrl="https://www.guadaltech.es/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
