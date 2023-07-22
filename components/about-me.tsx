@@ -27,7 +27,7 @@ export function AboutMe() {
         developer specialized in
       </h2>
       <CardsGrid>
-        <SkillCard title="Angular" level={85} dialog="" icon={AngularLogo}>
+        <SkillCard title="Angular" level={75} dialog="" icon={AngularLogo}>
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Two years of experience</strong>
             {' '}
@@ -49,7 +49,7 @@ export function AboutMe() {
             internal frontend developer.
           </p>
         </SkillCard>
-        <SkillCard title="JavaScript" level={75} dialog="" icon={JavascriptLogo}>
+        <SkillCard title="JavaScript" level={65} dialog="" icon={JavascriptLogo}>
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Strong foundations</strong>
             {' '}
@@ -74,7 +74,7 @@ export function AboutMe() {
             </li>
           </ul>
         </SkillCard>
-        <SkillCard title="Redux/RxJs" level={60} dialog="" icon={ReduxLogo}>
+        <SkillCard title="Redux/RxJs" level={50} dialog="" icon={ReduxLogo}>
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             Highly skilled in
             {' '}

@@ -31,7 +31,7 @@ export function SkillCard({
         </div>
         <div className={cn('flex-auto')}>
           <CardTitle className={cn('mb-1', 'lg:text-xl', 'text-lg')}>{title}</CardTitle>
-          <Progress value={level} />
+          <Progress value={level} className={cn('bg-[rgba(25,25,25,0.4)]')} />
         </div>
       </CardHeader>
       <CardContent>
