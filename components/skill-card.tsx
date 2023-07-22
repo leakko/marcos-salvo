@@ -16,12 +16,14 @@ export function SkillCard({
   children,
   dialog,
   icon,
+  titleUrl,
 }: {
   title: string;
   level: number;
   children: React.ReactNode;
   dialog: React.ReactNode;
   icon: StaticImageData;
+  titleUrl: string;
 }) {
   return (
     <Card className={cn('w-full', 'lg:w-1/4', 'm-3', 'lg:m-5')}>
@@ -30,7 +32,7 @@ export function SkillCard({
           <Image src={icon} alt="Skill logo" className={cn('rounded', 'object-contain')} />
         </div>
         <div className={cn('flex-auto')}>
-          <CardTitle className={cn('mb-1', 'lg:text-xl', 'text-lg')}>{title}</CardTitle>
+          <CardTitle className={cn('mb-1', 'lg:text-xl', 'text-lg')}><a href={titleUrl}>{title}</a></CardTitle>
           <Progress value={level} className={cn('bg-[rgba(25,25,25,0.4)]')} />
         </div>
       </CardHeader>

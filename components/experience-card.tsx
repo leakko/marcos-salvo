@@ -17,6 +17,7 @@ export function ExperienceCard({
   children,
   dialog,
   icon,
+  titleUrl,
 }: {
   title: string;
   startDate: React.ReactNode;
@@ -24,6 +25,7 @@ export function ExperienceCard({
   children: React.ReactNode;
   dialog: React.ReactNode;
   icon: StaticImageData;
+  titleUrl: string;
 }) {
   return (
     <Card className={cn('w-full', 'lg:w-1/4', 'm-3', 'lg:m-5', !finishDate && 'border-solid border-t-8 border-[rgba(25,25,25,0.7)]')}>
@@ -32,7 +34,7 @@ export function ExperienceCard({
           <Image src={icon} alt="Skill logo" className={cn('rounded', 'object-contain')} />
         </div>
         <div className={cn('flex-auto')}>
-          <CardTitle className={cn('mb-1', 'lg:text-xl', 'text-lg')}>{title}</CardTitle>
+          <CardTitle className={cn('mb-1', 'lg:text-xl', 'text-lg')}><a href={titleUrl}>{title}</a></CardTitle>
           <CardDescription>
             {startDate}
             {' '}
