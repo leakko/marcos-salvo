@@ -44,10 +44,11 @@ export function AboutMe() {
             {' '}
             <strong>Angular 14</strong>
             {' '}
-            as internal frontend developer in
+            as
             {' '}
             <strong>Vodafone</strong>
-            .
+            {' '}
+            internal frontend developer.
           </p>
         </SkillCard>
         <SkillCard title="JavaScript" level={75} dialog="" icon={JavascriptLogo}>
@@ -62,7 +63,7 @@ export function AboutMe() {
               {' '}
               <strong>Frontend/JS</strong>
               {' '}
-              related subjects of my
+              related subjects at my
               {' '}
               <strong>Software Engineering degree</strong>
             </li>
