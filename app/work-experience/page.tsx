@@ -28,14 +28,46 @@ export default function () {
           </p>
           <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
             <li className={cn('mb-3')}>
-              Maintenance and development of features for Vodafone&#39;s website,
-              using Angular 14+ and Stencil.js as main technologies.
+              Maintain and
+              {' '}
+              <strong>develop features</strong>
+              {' '}
+              for
+              {' '}
+              <a href="https://www.vodafone.es/c/particulares/es/"><strong>Vodafone&#39;s website</strong></a>
+              ,
+              using
+              {' '}
+              <a href="https://angular.io/">Angular</a>
+              {' '}
+              14+ and
+              {' '}
+              <a href="https://stenciljs.com/">Stencil.js</a>
+              {' '}
+              as main technologies.
             </li>
             <li className={cn('mb-3')}>
-              Analytics delivery architecture optimized using directives, RxJS, and NgRX.
+              <strong>Optimize analytics</strong>
+              {' '}
+              delivery
+              {' '}
+              <strong>architecture</strong>
+              {' '}
+              using directives,
+              {' '}
+              <a href="https://rxjs.dev/">RxJs</a>
+              , and
+              {' '}
+              <a href="https://ngrx.io/">NgRx</a>
+              .
             </li>
             <li>
-              Unit testing with Jest.
+              <strong>Unit testing</strong>
+              {' '}
+              with
+              {' '}
+              <a href="https://jestjs.io/">Jest</a>
+              .
             </li>
           </ul>
         </ExperienceCard>
@@ -45,14 +77,39 @@ export default function () {
           </p>
           <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
             <li className={cn('mb-3')}>
-              Main frontend developer of the Álava (province of Spain) public map visualizer.
+              <strong>Main</strong>
+              {' '}
+              frontend
+              {' '}
+              <strong>developer</strong>
+              {' '}
+              of the Álava (province of Spain)
+              {' '}
+              <a href="https://www.geo.euskadi.eus/geobisorea"><strong>public map visualizer</strong></a>
+              .
             </li>
             <li className={cn('mb-3')}>
-              Develop the frontend side of GIS (Geographic Information Systems),
-              mainly through Angular framework.
+              <strong>Develop</strong>
+              {' '}
+              the
+              {' '}
+              <strong>frontend</strong>
+              {' '}
+              side of GIS (
+              <strong>Geographic Information Systems</strong>
+              ),
+              mainly through
+              {' '}
+              <a href="https://angular.io/">Angular</a>
+              {' '}
+              framework.
             </li>
             <li>
-              Use OpenLayers to transform Geographic Information into maps.
+              Use
+              {' '}
+              <a href="https://openlayers.org/">OpenLayers</a>
+              {' '}
+              to transform Geographic Information into maps.
             </li>
           </ul>
         </ExperienceCard>
@@ -62,7 +119,24 @@ export default function () {
           </p>
           <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
             <li className={cn('mb-3')}>
-              Main frontend developer of the Álava (province of Spain) public map visualizer.
+              <strong>Develop</strong>
+              {' '}
+              specific
+              {' '}
+              <strong>features</strong>
+              {' '}
+              for
+              {' '}
+              <strong>cross-platform applications</strong>
+              {' '}
+              using
+              {' '}
+              <a href="https://ionicframework.com/">Ionic</a>
+              {' '}
+              and
+              {' '}
+              <a href="https://angular.io/">Angular</a>
+              .
             </li>
           </ul>
         </ExperienceCard>

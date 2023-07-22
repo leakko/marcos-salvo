@@ -33,14 +33,18 @@ export function AboutMe() {
             {' '}
             as
             {' '}
-            <strong>Angular</strong>
+            <strong><a href="https://angular.io/">Angular</a></strong>
             {' '}
             frontend developer.
           </p>
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             Currently working with
             {' '}
-            <strong>Angular 14</strong>
+            <strong>
+              <a href="https://angular.io/">Angular</a>
+              {' '}
+              14
+            </strong>
             {' '}
             as
             {' '}
@@ -63,7 +67,7 @@ export function AboutMe() {
               {' '}
               related subjects at my
               {' '}
-              <strong>Software Engineering degree</strong>
+              <strong><a href="https://www.uoc.edu/en/studies/bachelors-degrees/degree-software-development">Software Engineering degree</a></strong>
             </li>
             <li>
               Working
@@ -86,11 +90,11 @@ export function AboutMe() {
             {' '}
             thanks to intensive use of
             {' '}
-            <strong>NgRx</strong>
+            <strong><a href="https://ngrx.io/">NgRx</a></strong>
             {' '}
             (Redux for Angular) and
             {' '}
-            <strong>RxJs</strong>
+            <strong><a href="https://rxjs.dev/">RxJs</a></strong>
             .
           </p>
         </SkillCard>
