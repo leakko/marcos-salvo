@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import { ExperienceCard } from '@/components/experience-card';
+import { SubheadingCard } from '@/components/subheading-card';
 import { CardsGrid } from '@/components/cards-grid';
 import vodafoneLogo from '@/assets/img/vodafone-logo.webp';
 import WorkExperience from '@/assets/img/work-experience-icon.webp';
@@ -22,7 +22,7 @@ export default function () {
       </div>
       <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Work Experience</h1>
       <CardsGrid>
-        <ExperienceCard title="Frontend Developer" startDate="08/22" dialog="" icon={vodafoneLogo} company="Vodafone" companyUrl="https://www.vodafone.es/c/conocenos/es/vodafone-espana/trabaja-con-nosotros/">
+        <SubheadingCard title="Frontend Developer" startDate="08/22" dialog="" icon={vodafoneLogo} company="Vodafone" companyUrl="https://www.vodafone.es/c/conocenos/es/vodafone-espana/trabaja-con-nosotros/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
@@ -70,8 +70,8 @@ export default function () {
               .
             </li>
           </ul>
-        </ExperienceCard>
-        <ExperienceCard title="Frontend Developer" startDate="01/22" finishDate="06/22" dialog="" icon={geogramaLogo} company="Geograma" companyUrl="https://www.geograma.com/">
+        </SubheadingCard>
+        <SubheadingCard title="Frontend Developer" startDate="01/22" finishDate="06/22" dialog="" icon={geogramaLogo} company="Geograma" companyUrl="https://www.geograma.com/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
@@ -112,8 +112,8 @@ export default function () {
               to transform Geographic Information into maps.
             </li>
           </ul>
-        </ExperienceCard>
-        <ExperienceCard title="Frontend Developer" startDate="10/21" finishDate="01/22" dialog="" icon={guadaltechLogo} company="Guadaltech" companyUrl="https://www.guadaltech.es/">
+        </SubheadingCard>
+        <SubheadingCard title="Frontend Developer" startDate="10/21" finishDate="01/22" dialog="" icon={guadaltechLogo} company="Guadaltech" companyUrl="https://www.guadaltech.es/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
@@ -139,7 +139,7 @@ export default function () {
               .
             </li>
           </ul>
-        </ExperienceCard>
+        </SubheadingCard>
       </CardsGrid>
     </main>
   );

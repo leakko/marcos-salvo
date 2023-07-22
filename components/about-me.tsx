@@ -4,7 +4,7 @@ import avatar from '@/assets/img/avatar.webp';
 import JavascriptLogo from '@/assets/img/javascript-logo.webp';
 import AngularLogo from '@/assets/img/angular-logo.webp';
 import ReduxLogo from '@/assets/img/redux-logo.webp';
-import { SkillCard } from './skill-card';
+import { ProgressCard } from './progress-card';
 import { CardsGrid } from './cards-grid';
 
 export function AboutMe() {
@@ -27,7 +27,7 @@ export function AboutMe() {
         developer specialized in
       </h2>
       <CardsGrid>
-        <SkillCard title="Angular" level={75} dialog="" icon={AngularLogo} titleUrl="https://angular.io/">
+        <ProgressCard title="Angular" level={75} dialog="" icon={AngularLogo} titleUrl="https://angular.io/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Two years of experience</strong>
             {' '}
@@ -52,8 +52,8 @@ export function AboutMe() {
             {' '}
             internal frontend developer.
           </p>
-        </SkillCard>
-        <SkillCard title="JavaScript" level={65} dialog="" icon={JavascriptLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript">
+        </ProgressCard>
+        <ProgressCard title="JavaScript" level={65} dialog="" icon={JavascriptLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Strong foundations</strong>
             {' '}
@@ -77,8 +77,8 @@ export function AboutMe() {
               with JavaScript for more than 2 years.
             </li>
           </ul>
-        </SkillCard>
-        <SkillCard title="Redux/RxJs" level={50} dialog="" icon={ReduxLogo} titleUrl="https://ngrx.io/">
+        </ProgressCard>
+        <ProgressCard title="Redux/RxJs" level={50} dialog="" icon={ReduxLogo} titleUrl="https://ngrx.io/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             Highly skilled in
             {' '}
@@ -97,7 +97,7 @@ export function AboutMe() {
             <strong><a href="https://rxjs.dev/">RxJs</a></strong>
             .
           </p>
-        </SkillCard>
+        </ProgressCard>
       </CardsGrid>
     </main>
   );
