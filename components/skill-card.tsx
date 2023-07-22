@@ -24,11 +24,13 @@ export function SkillCard({
   icon: StaticImageData;
 }) {
   return (
-    <Card className={cn('w-full lg:w-1/4 m-3 lg:m-5')}>
-      <CardHeader className={cn('flex flex-nowrap flex-row items-center')}>
-        <Image src={icon} alt="Skill logo" width="50" height="50" className={cn('rounded mr-2')} />
+    <Card className={cn('w-full', 'lg:w-1/4', 'm-3', 'lg:m-5')}>
+      <CardHeader className={cn('flex', 'flex-nowrap', 'flex-row', 'items-center')}>
+        <div className={cn('relative', ' mr-2')} style={{ width: '50px', height: '50px' }}>
+          <Image src={icon} alt="Skill logo" className={cn('rounded', 'object-contain')} />
+        </div>
         <div className={cn('flex-auto')}>
-          <CardTitle className={cn('mb-1 lg:text-xl text-lg')}>{title}</CardTitle>
+          <CardTitle className={cn('mb-1', 'lg:text-xl', 'text-lg')}>{title}</CardTitle>
           <Progress value={level} />
         </div>
       </CardHeader>
