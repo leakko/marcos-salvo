@@ -7,7 +7,7 @@ import WorkExperience from '@/assets/img/work-experience-icon.webp';
 import geogramaLogo from '@/assets/img/geograma-logo.webp';
 import guadaltechLogo from '@/assets/img/guadaltech-logo.webp';
 
-export default function () {
+export default function Page() {
   return (
     <main className={cn('flex', 'flex-col', 'items-center')}>
       <div className={cn('relative', 'w-16', 'lg:w-40', 'h-16', 'lg:h-40')}>
@@ -22,7 +22,7 @@ export default function () {
       </div>
       <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Work Experience</h1>
       <CardsGrid>
-        <SubheadingCard title="Frontend Developer" startDate="08/22" dialog="" icon={vodafoneLogo} company="Vodafone" companyUrl="https://www.vodafone.es/c/conocenos/es/vodafone-espana/trabaja-con-nosotros/">
+        <SubheadingCard title="Frontend Developer" startDate="08/22" dialog="" icon={vodafoneLogo} institution="Vodafone" institutionUrl="https://www.vodafone.es/c/conocenos/es/vodafone-espana/trabaja-con-nosotros/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
@@ -71,7 +71,7 @@ export default function () {
             </li>
           </ul>
         </SubheadingCard>
-        <SubheadingCard title="Frontend Developer" startDate="01/22" finishDate="06/22" dialog="" icon={geogramaLogo} company="Geograma" companyUrl="https://www.geograma.com/">
+        <SubheadingCard title="Frontend Developer" startDate="01/22" finishDate="06/22" dialog="" icon={geogramaLogo} institution="Geograma" institutionUrl="https://www.geograma.com/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
@@ -113,7 +113,7 @@ export default function () {
             </li>
           </ul>
         </SubheadingCard>
-        <SubheadingCard title="Frontend Developer" startDate="10/21" finishDate="01/22" dialog="" icon={guadaltechLogo} company="Guadaltech" companyUrl="https://www.guadaltech.es/">
+        <SubheadingCard title="Frontend Developer" startDate="10/21" finishDate="01/22" dialog="" icon={guadaltechLogo} institution="Guadaltech" institutionUrl="https://www.guadaltech.es/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
             <strong>Main activities</strong>
           </p>
