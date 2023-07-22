@@ -44,7 +44,7 @@ export function ExperienceCard({
             {' '}
             -
             {' '}
-            {finishDate ?? <strong>Present</strong>}
+            {finishDate ?? <strong>Now</strong>}
           </CardDescription>
         </div>
       </CardHeader>
