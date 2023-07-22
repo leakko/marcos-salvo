@@ -20,8 +20,8 @@ export function ProgressCard({
 }: {
   title: string;
   level: number;
-  children: React.ReactNode;
-  dialog: React.ReactNode;
+  children?: React.ReactNode;
+  dialog?: React.ReactNode;
   icon: StaticImageData;
   titleUrl: string;
 }) {
@@ -36,12 +36,22 @@ export function ProgressCard({
           <Progress value={level} className={cn('bg-[rgba(25,25,25,0.4)]')} />
         </div>
       </CardHeader>
-      <CardContent className={cn(!children && 'pb-0')}>
-        {children}
-      </CardContent>
-      <CardFooter className={cn(!children && 'pb-2')}>
-        {dialog}
-      </CardFooter>
+      {
+        children
+        && (
+        <CardContent>
+          {children}
+        </CardContent>
+        )
+      }
+      {
+        dialog
+        && (
+        <CardFooter>
+          {dialog}
+        </CardFooter>
+        )
+      }
     </Card>
   );
 }
