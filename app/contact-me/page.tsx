@@ -8,12 +8,12 @@ import linkedLogo from '@/assets/img/linkedin-logo.webp';
 export default function Page() {
   return (
     <main className={cn('flex', 'flex-col', 'items-center')}>
-      <div className={cn('relative', 'w-20', 'lg:w-52', 'h-20', 'lg:h-52')}>
+      <div className={cn('relative', 'w-20', 'lg:w-40', 'h-20', 'lg:h-40')}>
         <Image
           src={emailIcon}
           alt="Toon avatar"
           fill
-          sizes="(min-width: 1024px) 13rem, 5rem"
+          sizes="(min-width: 1024px) 10rem, 5rem"
           priority
           className={cn('object-contain')}
         />
