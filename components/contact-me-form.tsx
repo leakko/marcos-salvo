@@ -16,11 +16,10 @@ import { formSchema } from '@/models/form.schema';
 import { useForm } from 'react-hook-form';
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export function ContactMeForm() {
-  const formRef = useRef();
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'submittedOk' | 'submittedKo'>('idle');
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -55,7 +54,7 @@ export function ContactMeForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className={cn('space-y-2', 'w-full', 'lg:space-y-4')} ref={formRef}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className={cn('space-y-2', 'w-full', 'lg:space-y-4')}>
         <FormField
           control={form.control}
           name="user_name"
