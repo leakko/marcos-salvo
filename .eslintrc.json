@@ -13,7 +13,8 @@
     "react/prop-types": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "react/require-default-props": "off",
-    "jsx-a11y/heading-has-content": "off"
+    "jsx-a11y/heading-has-content": "off",
+    "react/jsx-no-constructed-context-values": "off"
   },
   "ignorePatterns": ["next.config.js", "postcss.config.js"]
 }
