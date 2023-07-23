@@ -2,6 +2,8 @@ import { ContactMeForm } from '@/components/contact-me-form';
 import Image from 'next/image';
 import emailIcon from '@/assets/img/email-icon.webp';
 import { cn } from '@/lib/utils';
+import whatsappLogo from '@/assets/img/whatsapp-logo.webp';
+import linkedLogo from '@/assets/img/linkedin-logo.webp';
 
 export default function Page() {
   return (
@@ -17,7 +19,20 @@ export default function Page() {
         />
       </div>
       <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Contact me</h1>
+      <div className={cn('mt-6', 'flex', 'justify-center')}>
+        <div className={cn('relative', ' mr-2')} style={{ width: '50px', height: '50px' }}>
+          <a href="https://wa.me/+34666028195">
+            <Image src={whatsappLogo} alt="Whatsapp logo" width={50} height={50} className={cn('rounded', 'object-contain')} />
+          </a>
+        </div>
+        <div className={cn('relative', ' mr-2')} style={{ width: '50px', height: '50px' }}>
+          <a href="https://www.linkedin.com/in/marcos-salvo/">
+            <Image src={linkedLogo} alt="Linkedin logo logo" width={50} height={50} className={cn('rounded', 'object-contain')} />
+          </a>
+        </div>
+      </div>
       <ContactMeForm />
+      {/* <hr className={cn('b-white', 'h-1', 'border-2', 'w-full', 'mt-8')} /> */}
     </main>
   );
 }
