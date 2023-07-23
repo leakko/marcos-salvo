@@ -13,4 +13,7 @@ export const sections: Section[] = [
   {
     id: 4, path: SectionPathEnum.skills, name: 'Skills', description: 'Skills',
   },
+  {
+    id: 4, path: SectionPathEnum.contactMe, name: 'Contact me', description: 'Contact me',
+  },
 ];
