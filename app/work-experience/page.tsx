@@ -35,23 +35,17 @@ export default function Page() {
               for
               {' '}
               <a href="https://www.vodafone.es/c/particulares/es/"><strong>Vodafone&#39;s website</strong></a>
-              ,
+              {' '}
               using
               {' '}
               <a href="https://angular.io/">Angular</a>
               {' '}
-              14+ and
+              14+, and secondarily
               {' '}
-              <a href="https://stenciljs.com/">Stencil.js</a>
-              {' '}
-              as main technologies.
+              <a href="https://stenciljs.com/">Stencil.js.</a>
             </li>
             <li className={cn('mb-3')}>
-              <strong>Optimize analytics</strong>
-              {' '}
-              delivery
-              {' '}
-              <strong>architecture</strong>
+              <strong>Optimize analytics architecture</strong>
               {' '}
               using directives,
               {' '}
@@ -83,7 +77,7 @@ export default function Page() {
               {' '}
               <strong>developer</strong>
               {' '}
-              of the Álava (province of Spain)
+              of Álava&#39;s (province of Spain)
               {' '}
               <a href="https://www.geo.euskadi.eus/geobisorea"><strong>public map visualizer</strong></a>
               .
@@ -120,12 +114,6 @@ export default function Page() {
           <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
             <li className={cn('mb-3')}>
               <strong>Develop</strong>
-              {' '}
-              specific
-              {' '}
-              <strong>features</strong>
-              {' '}
-              for
               {' '}
               <strong>cross-platform applications</strong>
               {' '}
