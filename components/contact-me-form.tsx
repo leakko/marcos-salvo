@@ -16,9 +16,13 @@ import { formSchema } from '@/models/form.schema';
 import { useForm } from 'react-hook-form';
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export function ContactMeForm() {
-  // 1. Define your form.
+  const formRef = useRef();
+  const [formState, setFormState] = useState<'idle' | 'submitting' | 'submittedOk' | 'submittedKo'>('idle');
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -28,14 +32,30 @@ export function ContactMeForm() {
     },
   });
 
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  const getSubmitStatusJsx = () => {
+    if (formState === 'idle') {
+      return <Button type="submit" variant="secondary">Send email</Button>;
+    } if (formState === 'submitting') {
+      return <Button type="submit" variant="secondary" disabled>Submitting...</Button>;
+    } if (formState === 'submittedOk') {
+      return <p>Your message was submitted correctly!</p>;
+    }
+    return <p className={cn('text-red')}>There was an error submitting your message, please try again later.</p>;
+  };
+
+  function onSubmit() {
+    setFormState('submitting');
+    emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string, 'form', process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)
+      .then(() => {
+        setFormState('submittedOk');
+      }, () => {
+        setFormState('submittedKo');
+      });
   }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className={cn('space-y-2', 'w-full', 'lg:space-y-4')}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className={cn('space-y-2', 'w-full', 'lg:space-y-4')} ref={formRef}>
         <FormField
           control={form.control}
           name="user_name"
@@ -85,7 +105,7 @@ export function ContactMeForm() {
           )}
         />
         <div className={cn('flex justify-center')}>
-          <Button type="submit" variant="secondary">Send email</Button>
+          {getSubmitStatusJsx()}
         </div>
       </form>
     </Form>
