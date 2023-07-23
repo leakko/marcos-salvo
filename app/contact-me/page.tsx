@@ -32,7 +32,6 @@ export default function Page() {
         </div>
       </div>
       <ContactMeForm />
-      {/* <hr className={cn('b-white', 'h-1', 'border-2', 'w-full', 'mt-8')} /> */}
     </main>
   );
 }
