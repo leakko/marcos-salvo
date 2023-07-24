@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import { DropdownMenuRadio } from '@/components/drop-down-menu';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,6 +24,15 @@ export default function RootLayout({
           {children}
         </div>
       </body>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-NWLC6RT53D" strategy="afterInteractive" />
+      <Script id="data-layer" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-NWLC6RT53D');`}
+      </Script>
     </html>
   );
 }
