@@ -6,6 +6,12 @@ import vodafoneLogo from '@/assets/img/vodafone-logo.webp';
 import WorkExperience from '@/assets/img/work-experience-icon.webp';
 import geogramaLogo from '@/assets/img/geograma-logo.webp';
 import guadaltechLogo from '@/assets/img/guadaltech-logo.webp';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Work Experience | Marcos Salvo',
+  description: 'Explore my last work experiences.',
+};
 
 export default function Page() {
   return (

@@ -6,6 +6,12 @@ import uocLogo from '@/assets/img/uoc-logo.webp';
 import ironhackLogo from '@/assets/img/ironhack-logo.webp';
 import EducationIcon from '@/assets/img/education-icon.webp';
 import sevilleUniversityLogo from '@/assets/img/seville-university-logo.webp';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Education | Marcos Salvo',
+  description: 'Explore my academic degrees and courses.',
+};
 
 export default function Page() {
   return (

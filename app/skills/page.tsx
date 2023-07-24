@@ -11,6 +11,12 @@ import rxjsLogo from '@/assets/img/rxjs-logo.webp';
 import skillsIcon from '@/assets/img/skills-icon.webp';
 import { ProgressCard } from '@/components/progress-card';
 import { CardsGrid } from '@/components/cards-grid';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Skills | Marcos Salvo',
+  description: 'Explore the technologies I know about.',
+};
 
 export default function Page() {
   return (

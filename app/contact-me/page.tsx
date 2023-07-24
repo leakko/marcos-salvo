@@ -4,6 +4,12 @@ import emailIcon from '@/assets/img/email-icon.webp';
 import { cn } from '@/lib/utils';
 import whatsappLogo from '@/assets/img/whatsapp-logo.webp';
 import linkedLogo from '@/assets/img/linkedin-logo.webp';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact me | Marcos Salvo',
+  description: 'Contact me by whatsapp, linkedin or email.',
+};
 
 export default function Page() {
   return (

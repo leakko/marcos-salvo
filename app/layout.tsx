@@ -3,12 +3,13 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import { DropdownMenuRadio } from '@/components/drop-down-menu';
 import Script from 'next/script';
+import { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Marcos Salvo Website',
-  description: 'Personal website where you can learn more about me and my work.',
+export const metadata: Metadata = {
+  title: 'Frontend Developer | Marcos Salvo',
+  description: 'Welcome to my website. I am Marcos Rodriguez Salvo, a frontend developer from Spain with 2 years of experience.',
 };
 
 export default function RootLayout({
