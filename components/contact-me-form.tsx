@@ -85,7 +85,7 @@ export function ContactMeForm() {
           name="message"
           render={({ field }) => (
             <FormItem className={cn('flex', 'flex-col')}>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className={cn('mt-2')}>Message</FormLabel>
               <FormControl className={cn('text-black')}>
                 <textarea placeholder="Hello Marcos, I would like to tell you about..." {...field} className={cn('h-40 lg:h-20 rounded p-2 text-sm text-black')} />
               </FormControl>
