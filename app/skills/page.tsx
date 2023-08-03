@@ -35,12 +35,12 @@ export default function Page() {
       <CardsGrid>
         <ProgressCard title="Angular" level={75} dialog="" icon={angularLogo} titleUrl="https://angular.io/" />
         <ProgressCard title="JavaScript" level={65} dialog="" icon={javascriptLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
-        <ProgressCard title="React" level={55} dialog="" icon={reactLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
-        <ProgressCard title="RxJs" level={55} dialog="" icon={rxjsLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
-        <ProgressCard title="Next.js" level={50} dialog="" icon={nextLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
-        <ProgressCard title="TypeScript" level={50} dialog="" icon={typeScriptLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
-        <ProgressCard title="Redux/NgRx" level={50} dialog="" icon={reduxLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
-        <ProgressCard title="Stencil.js" level={35} dialog="" icon={stencilLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
+        <ProgressCard title="React" level={55} dialog="" icon={reactLogo} titleUrl="https://react.dev/" />
+        <ProgressCard title="RxJs" level={55} dialog="" icon={rxjsLogo} titleUrl="https://rxjs.dev/" />
+        <ProgressCard title="Next.js" level={50} dialog="" icon={nextLogo} titleUrl="https://nextjs.org/" />
+        <ProgressCard title="TypeScript" level={50} dialog="" icon={typeScriptLogo} titleUrl="https://www.typescriptlang.org/" />
+        <ProgressCard title="Redux/NgRx" level={50} dialog="" icon={reduxLogo} titleUrl="https://ngrx.io/" />
+        <ProgressCard title="Stencil.js" level={35} dialog="" icon={stencilLogo} titleUrl="https://stenciljs.com/" />
       </CardsGrid>
     </main>
   );
