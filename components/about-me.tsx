@@ -18,7 +18,6 @@ export function AboutMe() {
           sizes="(min-width: 1024px) 16rem, 8rem"
           priority
           className={cn('rounded-full', 'object-contain', 'border-solid', 'border-2', 'border-white')}
-          placeholder="blur"
         />
       </div>
       <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Hi, I&#39;m Marcos.</h1>
