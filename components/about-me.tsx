@@ -43,7 +43,7 @@ export function AboutMe() {
             <strong>
               <a href="https://angular.io/">Angular</a>
               {' '}
-              14
+              15
             </strong>
             {' '}
             as
