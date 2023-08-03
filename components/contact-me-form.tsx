@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -64,9 +63,6 @@ export function ContactMeForm() {
               <FormControl className={cn('text-black')}>
                 <Input placeholder="Jhon Doe" {...field} />
               </FormControl>
-              <FormDescription>
-                This is your name.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -80,9 +76,6 @@ export function ContactMeForm() {
               <FormControl className={cn('text-black')}>
                 <Input placeholder="jhon-doe@gmail.com" {...field} />
               </FormControl>
-              <FormDescription>
-                This is your email.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -96,9 +89,6 @@ export function ContactMeForm() {
               <FormControl className={cn('text-black')}>
                 <textarea placeholder="Hello Marcos, I would like to tell you about..." {...field} className={cn('h-40 lg:h-20 rounded p-2 text-sm text-black')} />
               </FormControl>
-              <FormDescription>
-                This is your message to me.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
