@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import avatar from '@/assets/img/avatar.webp';
+import selfie from '@/assets/img/selfie.webp';
 import JavascriptLogo from '@/assets/img/javascript-logo.webp';
 import AngularLogo from '@/assets/img/angular-logo.webp';
 import ReduxLogo from '@/assets/img/redux-logo.webp';
@@ -10,14 +10,15 @@ import { CardsGrid } from './cards-grid';
 export function AboutMe() {
   return (
     <main className={cn('flex', 'flex-col', 'items-center')}>
-      <div className={cn('relative', 'w-32', 'lg:w-80', 'h-32', 'lg:h-80')}>
+      <div className={cn('relative', 'w-32', 'lg:w-60', 'h-32', 'lg:h-60', 'mb-3')}>
         <Image
-          src={avatar}
+          src={selfie}
           alt="Toon avatar"
           fill
-          sizes="(min-width: 1024px) 20rem, 8rem"
+          sizes="(min-width: 1024px) 16rem, 8rem"
           priority
-          className={cn('rounded-full', 'object-contain')}
+          className={cn('rounded-full', 'object-contain', 'border-solid', 'border-2', 'border-white')}
+          placeholder="blur"
         />
       </div>
       <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Hi, I&#39;m Marcos.</h1>
