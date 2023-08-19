@@ -38,12 +38,12 @@ export function DropdownMenuRadio() {
           <DropdownMenuContent className="w-56" align="end">
             <DropdownMenuRadioGroup value={value} onValueChange={onValueSelected}>
               {
-                sections.map((sect) => (
+                sections.map((sect, i) => (
                   <div key={sect.id}>
                     <DropdownMenuRadioItem value={sect.path} className={cn('hover:cursor-pointer')}>
                       {sect.name}
                     </DropdownMenuRadioItem>
-                    <DropdownMenuSeparator />
+                    {i < sections.length - 1 && <DropdownMenuSeparator />}
                   </div>
                 ))
               }
