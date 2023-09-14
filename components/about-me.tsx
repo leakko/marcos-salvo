@@ -29,7 +29,7 @@ export function AboutMe() {
       <CardsGrid>
         <ProgressCard title="Angular" level={75} dialog="" icon={AngularLogo} titleUrl="https://angular.io/">
           <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
-            <strong>Two years of experience</strong>
+            <strong>More than 2 years of experience</strong>
             {' '}
             as
             {' '}
