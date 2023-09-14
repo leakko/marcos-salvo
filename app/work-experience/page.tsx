@@ -46,7 +46,7 @@ export default function Page() {
               {' '}
               <a href="https://angular.io/">Angular</a>
               {' '}
-              14+, and secondarily
+              15+, and secondarily
               {' '}
               <a href="https://stenciljs.com/">Stencil.js.</a>
             </li>
