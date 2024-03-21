@@ -22,8 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'bg-primary', 'text-white')}>
-        <div className={cn('max-w-7xl', 'mx-auto', 'my-8', 'w-screen', 'px-8')}>
+      <body className={cn(inter.className, 'bg-primary text-white')}>
+        <div className={cn('max-w-7xl mx-auto my-8 w-screen px-8')}>
           <DropdownMenuRadio />
           {children}
         </div>

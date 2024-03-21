@@ -53,7 +53,7 @@ export function ContactMeForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className={cn('space-y-2', 'w-full', 'lg:space-y-4')}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className={cn('space-y-2 w-full lg:space-y-4')}>
         <FormField
           control={form.control}
           name="user_name"
@@ -84,7 +84,7 @@ export function ContactMeForm() {
           control={form.control}
           name="message"
           render={({ field }) => (
-            <FormItem className={cn('flex', 'flex-col')}>
+            <FormItem className={cn('flex flex-col')}>
               <FormLabel className={cn('mt-2')}>Message</FormLabel>
               <FormControl className={cn('text-black')}>
                 <textarea placeholder="Hello Marcos, I would like to tell you about..." {...field} className={cn('h-40 lg:h-20 rounded p-2 text-sm text-black')} />
@@ -93,7 +93,7 @@ export function ContactMeForm() {
             </FormItem>
           )}
         />
-        <div className={cn('flex', 'justify-center')} style={{ marginTop: '16px' }}>
+        <div className={cn('flex justify-center')} style={{ marginTop: '16px' }}>
           {getSubmitStatusJsx()}
         </div>
       </form>

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className={cn('flex', 'flex-col', 'items-center')}>
-      <div className={cn('relative', 'w-16', 'lg:w-40', 'h-16', 'lg:h-40')}>
+    <main className={cn('flex flex-col items-center')}>
+      <div className={cn('relative w-16 lg:w-40 h-16 lg:h-40')}>
         <Image
           src={WorkExperience}
           alt="Toon avatar"
@@ -26,13 +26,13 @@ export default function Page() {
           className={cn('object-contain')}
         />
       </div>
-      <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Work Experience</h1>
+      <h1 className={cn('lg:text-5xl text-lg font-bold text-center my-2 lg:my-5 lg:mt-0')}>Work Experience</h1>
       <CardsGrid>
         <SubheadingCard title="Frontend Developer" startDate="08/22" dialog="" icon={vodafoneLogo} institution="Vodafone" institutionUrl="https://www.vodafone.es/c/conocenos/es/vodafone-espana/trabaja-con-nosotros/">
-          <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
             <strong>Main activities</strong>
           </p>
-          <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
+          <ul className={cn('list-disc ml-5 lg:text-base text-sm')}>
             <li className={cn('mb-3')}>
               Maintain and
               {' '}
@@ -72,10 +72,10 @@ export default function Page() {
           </ul>
         </SubheadingCard>
         <SubheadingCard title="Frontend Developer" startDate="01/22" finishDate="06/22" dialog="" icon={geogramaLogo} institution="Geograma" institutionUrl="https://www.geograma.com/">
-          <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
             <strong>Main activities</strong>
           </p>
-          <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
+          <ul className={cn('list-disc ml-5 lg:text-base text-sm')}>
             <li className={cn('mb-3')}>
               <strong>Main</strong>
               {' '}
@@ -114,10 +114,10 @@ export default function Page() {
           </ul>
         </SubheadingCard>
         <SubheadingCard title="Frontend Developer" startDate="10/21" finishDate="01/22" dialog="" icon={guadaltechLogo} institution="Guadaltech" institutionUrl="https://www.guadaltech.es/">
-          <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
             <strong>Main activities</strong>
           </p>
-          <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
+          <ul className={cn('list-disc ml-5 lg:text-base text-sm')}>
             <li className={cn('mb-3')}>
               <strong>Develop</strong>
               {' '}

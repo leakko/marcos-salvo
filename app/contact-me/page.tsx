@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className={cn('flex', 'flex-col', 'items-center')}>
-      <div className={cn('relative', 'w-20', 'lg:w-40', 'h-20', 'lg:h-40')}>
+    <main className={cn('flex flex-col items-center')}>
+      <div className={cn('relative w-20 lg:w-40 h-20 lg:h-40')}>
         <Image
           src={emailIcon}
           alt="Toon avatar"
@@ -24,16 +24,16 @@ export default function Page() {
           className={cn('object-contain')}
         />
       </div>
-      <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Contact me</h1>
-      <div className={cn('mt-6', 'flex', 'justify-center')}>
-        <div className={cn('relative', ' mr-2')} style={{ width: '50px', height: '50px' }}>
+      <h1 className={cn('lg:text-5xl text-lg font-bold text-center my-2 lg:my-5 lg:mt-0')}>Contact me</h1>
+      <div className={cn('mt-6 flex justify-center')}>
+        <div className={cn('relative  mr-2')} style={{ width: '50px', height: '50px' }}>
           <a href="https://wa.me/+34666028195">
-            <Image src={whatsappLogo} alt="Whatsapp logo" width={50} height={50} className={cn('rounded', 'object-contain')} />
+            <Image src={whatsappLogo} alt="Whatsapp logo" width={50} height={50} className={cn('rounded object-contain')} />
           </a>
         </div>
-        <div className={cn('relative', ' mr-2')} style={{ width: '50px', height: '50px' }}>
+        <div className={cn('relative  mr-2')} style={{ width: '50px', height: '50px' }}>
           <a href="https://www.linkedin.com/in/marcos-salvo/">
-            <Image src={linkedLogo} alt="Linkedin logo logo" width={50} height={50} className={cn('rounded', 'object-contain')} />
+            <Image src={linkedLogo} alt="Linkedin logo logo" width={50} height={50} className={cn('rounded object-contain')} />
           </a>
         </div>
       </div>

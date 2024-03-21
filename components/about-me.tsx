@@ -9,26 +9,26 @@ import { CardsGrid } from './cards-grid';
 
 export function AboutMe() {
   return (
-    <main className={cn('flex', 'flex-col', 'items-center')}>
-      <div className={cn('relative', 'w-32', 'lg:w-60', 'h-32', 'lg:h-60', 'mb-3')}>
+    <main className={cn('flex flex-col items-center')}>
+      <div className={cn('relative w-32 lg:w-60 h-32 lg:h-60 mb-3')}>
         <Image
           src={selfie}
           alt="Toon avatar"
           fill
           sizes="(min-width: 1024px) 16rem, 8rem"
           priority
-          className={cn('rounded-full', 'object-contain', 'border-solid', 'border-2', 'border-white')}
+          className={cn('rounded-full object-contain border-solid border-2 border-white')}
         />
       </div>
-      <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Hi, I&#39;m Marcos.</h1>
-      <h2 className={cn('lg:text-3xl', 'text-sm', 'font-bold', 'text-center mb-5')}>
-        <span className={cn('bg-white', 'text-primary', 'py-1', 'px-2', 'rounded', 'mr-1', 'lg:mr-2')}>Frontend</span>
+      <h1 className={cn('lg:text-5xl text-lg font-bold text-center my-2 lg:my-5 lg:mt-0')}>Hi, I&#39;m Marcos.</h1>
+      <h2 className={cn('lg:text-3xl text-sm font-bold text-center mb-5')}>
+        <span className={cn('bg-white text-primary py-1 px-2 rounded mr-1 lg:mr-2')}>Frontend</span>
         {' '}
         developer specialized in
       </h2>
       <CardsGrid>
         <ProgressCard title="Angular" level={75} dialog="" icon={AngularLogo} titleUrl="https://angular.io/">
-          <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
             <strong>More than 2 years of experience</strong>
             {' '}
             as
@@ -37,7 +37,7 @@ export function AboutMe() {
             {' '}
             frontend developer.
           </p>
-          <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
             Currently working with
             {' '}
             <strong>
@@ -54,12 +54,12 @@ export function AboutMe() {
           </p>
         </ProgressCard>
         <ProgressCard title="JavaScript" level={65} dialog="" icon={JavascriptLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript">
-          <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
             <strong>Strong foundations</strong>
             {' '}
             in JavaScript thanks to:
           </p>
-          <ul className={cn('list-disc', 'ml-5', 'lg:text-base', 'text-sm')}>
+          <ul className={cn('list-disc ml-5 lg:text-base text-sm')}>
             <li className={cn('mb-3')}>
               Exceling in the
               {' '}
@@ -79,7 +79,7 @@ export function AboutMe() {
           </ul>
         </ProgressCard>
         <ProgressCard title="Redux/RxJs" level={50} dialog="" icon={ReduxLogo} titleUrl="https://ngrx.io/">
-          <p className={cn('mb-2', 'lg:text-base', 'text-sm')}>
+          <p className={cn('mb-2 lg:text-base text-sm')}>
             Highly skilled in
             {' '}
             <strong>state management</strong>

@@ -27,10 +27,10 @@ export function DropdownMenuRadio() {
     router.push(selectedPath);
   };
   return (
-    <nav className={cn('flex', 'justify-end', 'text-primary', 'sticky top-3', 'z-10')}>
+    <nav className={cn('flex justify-end text-primary sticky top-3 z-10')}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <button type="button" className={cn('IconButton', 'bg-white', 'p-3', 'rounded-full', 'shadow-md', 'shadow-primary')} aria-label="Dropdown menu button">
+          <button type="button" className={cn('IconButton bg-white p-3 rounded-full shadow-md shadow-primary')} aria-label="Dropdown menu button">
             <HamburgerMenuIcon />
           </button>
         </DropdownMenuTrigger>

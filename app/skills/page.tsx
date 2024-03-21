@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className={cn('flex', 'flex-col', 'items-center')}>
-      <div className={cn('relative', 'w-16', 'lg:w-40', 'h-16', 'lg:h-40', 'mb-1', 'lg:mb-4')}>
+    <main className={cn('flex flex-col items-center')}>
+      <div className={cn('relative w-16 lg:w-40 h-16 lg:h-40 mb-1 lg:mb-4')}>
         <Image
           src={skillsIcon}
           alt="Toon avatar"
@@ -31,7 +31,7 @@ export default function Page() {
           className={cn('object-contain')}
         />
       </div>
-      <h1 className={cn('lg:text-5xl', 'text-lg', 'font-bold', 'text-center', 'my-2', 'lg:my-5', 'lg:mt-0')}>Skills</h1>
+      <h1 className={cn('lg:text-5xl text-lg font-bold text-center my-2 lg:my-5 lg:mt-0')}>Skills</h1>
       <CardsGrid>
         <ProgressCard title="Angular" level={75} dialog="" icon={angularLogo} titleUrl="https://angular.io/" />
         <ProgressCard title="JavaScript" level={65} dialog="" icon={javascriptLogo} titleUrl="https://developer.mozilla.org/es/docs/Web/JavaScript" />
