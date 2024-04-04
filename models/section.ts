@@ -6,7 +6,8 @@ export interface Section {
 }
 
 export enum SectionPathEnum {
-  aboutMe = 'about-me',
+  home = '/#home',
+  aboutMe = '/#about',
   workExperience = 'work-experience',
   education = 'education',
   skills = 'skills',

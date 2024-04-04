@@ -1,0 +1,43 @@
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import selfie from '@/assets/img/selfie.webp';
+import linkedLogo from '@/assets/img/linkedin-logo.webp';
+import ResumeButton from '../resume-button';
+
+export default function Home() {
+  return (
+    <section id="home" className={cn('flex flex-col items-center min-h-[calc(100vh-100px)] justify-center bg-gradient-to-br from-primary-500 to-primary')}>
+      <div className={cn('max-w-7xl mx-auto w-screen flex items-center gap-2 sm:gap-10 md:gap-20 flex-col md:flex-row justify-center')}>
+        <div className={cn('relative w-32 sm:w-60 h-32 sm:h-60 mb-3 flex')}>
+          <Image
+            src={selfie}
+            alt="Toon avatar"
+            fill
+            sizes="(min-width: 1024px) 16rem, 8rem"
+            priority
+            className={cn('rounded-full object-contain border-solid border-2 border-white')}
+          />
+        </div>
+        <div className={cn('flex flex-col items-center gap-4')}>
+          <div>
+            <h1 className={cn('sm:text-2xl text-sm font-semibold text-center mb-1 sm:mb-2 sm:mt-0')}>Hi, I&#39;m Marcos👋</h1>
+            <h2 className={cn('sm:text-5xl text-primary-200 text-xl font-bold text-center mb-1 sm:mb-2')}>
+              Frontend developer
+            </h2>
+            <h2 className={cn('sm:text-2xl text-sm font-semibold text-center sm:mt-0')}>
+              With 3 years of experience
+            </h2>
+          </div>
+          <div className={cn('flex gap-5')}>
+            <ResumeButton />
+            <div className={cn('relative mr-2')} style={{ width: '40px', height: '40px' }}>
+              <a href="https://www.linkedin.com/in/marcos-salvo/">
+                <Image src={linkedLogo} alt="Linkedin logo logo" width={40} height={40} className={cn('rounded object-contain')} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

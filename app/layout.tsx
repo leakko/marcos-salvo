@@ -22,10 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'bg-primary text-white')}>
+      <body className={cn(inter.className, 'bg-primary text-white m-0')}>
         <Navbar />
-        <div className={cn('max-w-7xl mx-auto my-8 w-screen px-8')}>
-          {children}
+        <div className={cn('relative top-[58px]')}>
+          <main className={cn('')}>
+            {children}
+          </main>
         </div>
       </body>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-NWLC6RT53D" strategy="afterInteractive" />
