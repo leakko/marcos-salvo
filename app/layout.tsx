@@ -1,9 +1,9 @@
 import { cn } from '@/lib/utils';
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { DropdownMenuRadio } from '@/components/drop-down-menu';
 import Script from 'next/script';
 import { Metadata } from 'next';
+import { Navbar } from '@/components/navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, 'bg-primary text-white')}>
+        <Navbar />
         <div className={cn('max-w-7xl mx-auto my-8 w-screen px-8')}>
-          <DropdownMenuRadio />
           {children}
         </div>
       </body>
