@@ -29,7 +29,7 @@ export function TechStack() {
             images.map((image) => (
               <div key={image.alt} className={cn('flex items-center flex-col justify-between h-20')}>
                 <Image src={image.src} alt={image.alt} width={50} height={50} />
-                <span className={cn('font-semibold text-xs')}>{image.alt}</span>
+                <span className={cn('font-semibold text-xs sm:text-base')}>{image.alt}</span>
               </div>
             ))
         }

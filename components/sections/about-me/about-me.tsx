@@ -9,8 +9,8 @@ import { TechStack } from '@/components/sections/about-me/tech-stack';
 
 export default function AboutMe() {
   return (
-    <section id="about" className={cn('flex flex-col justify-center bg-primary-500 text-left py-16')}>
-      <div className={cn('max-w-5xl mx-auto w-screen px-8 sm:px-0')}>
+    <section id="about" className={cn('w-screen flex flex-col justify-center sm:items-center bg-primary-500 text-left py-16 px-8')}>
+      <div className={cn('max-w-5xl mx-autosm:px-0')}>
         <h1 className={cn('sm:text-5xl text-xl font-bold mb-5')}>About me.</h1>
         <div className={cn('flex flex-col sm:flex-row sm:justify-between')}>
           <Facts />
