@@ -14,9 +14,6 @@ export const sections: Section[] = [
     id: 4, path: SectionPathEnum.education, name: 'Education', description: 'Education',
   },
   {
-    id: 5, path: SectionPathEnum.skills, name: 'Skills', description: 'Skills',
-  },
-  {
-    id: 6, path: SectionPathEnum.contactMe, name: 'Contact', description: 'Contact form',
+    id: 5, path: SectionPathEnum.contactMe, name: 'Contact', description: 'Contact form',
   },
 ];
