@@ -19,14 +19,14 @@ const TimelineItem: FC<TimelineItemProps> = ({
       <Image src={image} alt="Business Icon" width={50} height={50} />
     </span>
     <div className={cn('pl-3')}>
-      <h3 className={cn('sm:text-2xl text-sm font-semibold text-primary-200 leading-tight')}>
+      <h3 className={cn('md:text-2xl text-sm font-semibold text-primary-200 leading-tight')}>
         { institution }
         {' '}
         |
         {' '}
         { title }
       </h3>
-      <h2 className={cn('text-xs sm:text-sm mb-2 text-white/60')}>{ dates }</h2>
+      <h2 className={cn('text-xs md:text-sm mb-2 text-white/60')}>{ dates }</h2>
       <p className={cn('text-sm')}>{ description }</p>
     </div>
   </li>

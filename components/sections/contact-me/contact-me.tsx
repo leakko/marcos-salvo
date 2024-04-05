@@ -8,7 +8,7 @@ import linkedLogo from '@/assets/img/linkedin-logo.webp';
 export default function ContactMe() {
   return (
     <section id="contact" className={cn('flex justify-center bg-primary-500 text-left py-16 px-8')}>
-      <div className={cn('w-96 mx-autosm:px-0 flex flex-col items-center')}>
+      <div className={cn('w-96 mx-automd:px-0 flex flex-col items-center')}>
         <div className={cn('relative w-20 lg:w-40 h-20 lg:h-40')}>
           <Image
             src={emailIcon}

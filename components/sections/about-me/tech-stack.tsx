@@ -22,14 +22,14 @@ export function TechStack() {
   ];
 
   return (
-    <div className={cn('sm:w-2/5')}>
-      <h2 className={cn('sm:text-2xl text-sm font-semibold text-primary-200 mb-4')}>Tech Stack.</h2>
+    <div className={cn('md:w-2/5')}>
+      <h2 className={cn('md:text-2xl text-sm font-semibold text-primary-200 mb-4')}>Tech Stack.</h2>
       <div className={cn('flex items-center gap-5 flex-wrap')}>
         {
             images.map((image) => (
               <div key={image.alt} className={cn('flex items-center flex-col justify-between h-20')}>
                 <Image src={image.src} alt={image.alt} width={50} height={50} />
-                <span className={cn('font-semibold text-xs sm:text-base')}>{image.alt}</span>
+                <span className={cn('font-semibold text-xs md:text-base')}>{image.alt}</span>
               </div>
             ))
         }

@@ -7,8 +7,8 @@ import ResumeButton from '../../resume-button';
 export default function Home() {
   return (
     <section id="home" className={cn('flex flex-col items-center min-h-[calc(100vh-59px)] justify-center bg-gradient-to-br from-primary-500 to-primary')}>
-      <div className={cn('max-w-7xl mx-auto w-screen flex items-center gap-2 sm:gap-10 md:gap-20 flex-col md:flex-row justify-center')}>
-        <div className={cn('relative w-32 sm:w-60 h-32 sm:h-60 mb-3 flex')}>
+      <div className={cn('max-w-7xl mx-auto w-screen flex items-center gap-2 md:gap-10 md:gap-20 flex-col md:flex-row justify-center')}>
+        <div className={cn('relative w-32 md:w-60 h-32 md:h-60 mb-3 flex')}>
           <Image
             src={selfie}
             alt="Toon avatar"
@@ -20,11 +20,11 @@ export default function Home() {
         </div>
         <div className={cn('flex flex-col items-center gap-4')}>
           <div>
-            <h1 className={cn('sm:text-2xl text-sm font-semibold text-center mb-1 sm:mb-2 sm:mt-0')}>Hi, I&#39;m Marcos👋</h1>
-            <h2 className={cn('sm:text-5xl text-primary-200 text-xl font-bold text-center mb-1 sm:mb-2')}>
+            <h1 className={cn('md:text-2xl text-sm font-semibold text-center mb-1 md:mb-2 md:mt-0')}>Hi, I&#39;m Marcos👋</h1>
+            <h2 className={cn('md:text-5xl text-primary-200 text-xl font-bold text-center mb-1 md:mb-2')}>
               Frontend developer
             </h2>
-            <h2 className={cn('sm:text-2xl text-sm font-semibold text-center sm:mt-0')}>
+            <h2 className={cn('md:text-2xl text-sm font-semibold text-center md:mt-0')}>
               With 3 years of experience
             </h2>
           </div>
