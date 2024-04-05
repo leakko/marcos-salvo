@@ -7,9 +7,9 @@ import { cn } from '@/lib/utils';
 
 export default function AboutMe() {
   return (
-    <section id="about" className={cn('flex flex-col  min-h-[calc(100vh-100px)] justify-center bg-primary-500 text-left py-10')}>
-      <div className={cn('max-w-4xl mx-auto w-screen px-8')}>
-        <h1 className={cn('lg:text-5xl text-lg font-bold my-2 lg:my-5 lg:mt-0')}>About me.</h1>
+    <section id="about" className={cn('flex flex-col justify-center bg-primary-500 text-left py-16')}>
+      <div className={cn('max-w-5xl mx-auto w-screen px-8 sm:px-0')}>
+        <h1 className={cn('sm:text-5xl text-xl font-bold my-2 lg:my-5 lg:mt-0')}>About me.</h1>
         <h2 className={cn('lg:text-3xl text-sm font-bold mb-5')}>
           <span className={cn('bg-white text-primary py-1 px-2 rounded mr-1 lg:mr-2')}>Frontend</span>
           {' '}
