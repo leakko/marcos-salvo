@@ -6,11 +6,20 @@ const useScreenSize = () => {
     height: 0,
   });
 
+  const [debounced, setDebounced] = useState(true);
+
   useEffect(() => {
-    setScreenSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
+    if (debounced) {
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+      setDebounced(false);
+      setTimeout(() => {
+        setDebounced(true);
+      }, 1000);
+    }
+
     const handleResize = () => {
       setScreenSize({
         width: window.innerWidth,
@@ -23,7 +32,7 @@ const useScreenSize = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [debounced]);
 
   return screenSize;
 };
