@@ -22,13 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'bg-primary text-white m-0')}>
+      <body className={cn(inter.className, 'bg-primary text-white m-0 overflow-scroll')}>
         <Navbar />
-        <div className={cn('relative top-[58px]')}>
-          <main className={cn('')}>
-            {children}
-          </main>
-        </div>
+        <main>
+          {children}
+        </main>
       </body>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-NWLC6RT53D" strategy="afterInteractive" />
       <Script id="data-layer" strategy="afterInteractive">
