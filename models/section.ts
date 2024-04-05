@@ -9,7 +9,6 @@ export enum SectionPathEnum {
   home = '/#home',
   aboutMe = '/#about',
   workExperience = '/#work-experience',
-  education = 'education',
-  skills = 'skills',
+  education = '/#education',
   contactMe = 'contact-me',
 }

@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 interface TimelineItemProps {
   title: string;
-  company: string;
+  institution: string;
   dates: string;
   description: string;
   image: StaticImageData;
@@ -12,7 +12,7 @@ interface TimelineItemProps {
 }
 
 const TimelineItem: FC<TimelineItemProps> = ({
-  title, company, dates, description, image, lastItem,
+  title, institution, dates, description, image, lastItem,
 }) => (
   <li className={cn('ms-6', lastItem ? 'mb-1' : 'mb-10')}>
     <span className={cn('absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700')}>
@@ -20,7 +20,7 @@ const TimelineItem: FC<TimelineItemProps> = ({
     </span>
     <div className={cn('pl-3')}>
       <h3 className={cn('sm:text-2xl text-sm font-semibold text-primary-200 leading-tight')}>
-        { company }
+        { institution }
         {' '}
         |
         {' '}

@@ -5,7 +5,7 @@ import guadaltechLogo from '@/assets/img/guadaltech-logo.webp';
 
 interface IExperience {
   title: string;
-  company: string;
+  institution: string;
   dates: string;
   description: string;
   image: StaticImageData;
@@ -14,21 +14,21 @@ interface IExperience {
 export const experiences: IExperience[] = [
   {
     title: 'Front-end developer',
-    company: 'Vodafone',
+    institution: 'Vodafone',
     dates: 'aug 2022 - Present',
     description: "Maintenance and development of features for Vodafone's website, using Angular 15+ and Stencil.js as main",
     image: vodafoneLogo,
   },
   {
     title: 'Front-end developer',
-    company: 'Geograma',
+    institution: 'Geograma',
     dates: 'jan 2022 - jun 2022',
     description: 'Develop the frontend side of GIS (Geographic Information Systems), mainly through Angular',
     image: geogramaLogo,
   },
   {
     title: 'Front-end developer',
-    company: 'GuadalTech',
+    institution: 'GuadalTech',
     dates: 'oct 2021 - jan 2022',
     description: 'Develop features for cross-platform applications using Ionic and Angular',
     image: guadaltechLogo,
