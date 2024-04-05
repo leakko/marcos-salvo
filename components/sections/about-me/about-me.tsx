@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import Facts from '@/components/sections/about-me/facts';
 // import JavascriptLogo from '@/assets/img/javascript-logo.webp';
 // import AngularLogo from '@/assets/img/angular-logo.webp';
 // import ReduxLogo from '@/assets/img/redux-logo.webp';
@@ -9,12 +10,8 @@ export default function AboutMe() {
   return (
     <section id="about" className={cn('flex flex-col justify-center bg-primary-500 text-left py-16')}>
       <div className={cn('max-w-5xl mx-auto w-screen px-8 sm:px-0')}>
-        <h1 className={cn('sm:text-5xl text-xl font-bold my-2 lg:my-5 lg:mt-0')}>About me.</h1>
-        <h2 className={cn('lg:text-3xl text-sm font-bold mb-5')}>
-          <span className={cn('bg-white text-primary py-1 px-2 rounded mr-1 lg:mr-2')}>Frontend</span>
-          {' '}
-          developer specialized in
-        </h2>
+        <h1 className={cn('sm:text-5xl text-xl font-bold lg:my-0 mb-1')}>About me.</h1>
+        <Facts />
         {/* <CardsGrid>
           <ProgressCard title="Angular" level={75} dialog="" icon={AngularLogo} titleUrl="https://angular.io/">
             <p className={cn('mb-2 lg:text-base text-sm')}>

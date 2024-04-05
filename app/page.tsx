@@ -1,5 +1,5 @@
-import Home from '@/components/sections/home';
-import AboutMe from '@/components/sections/about-me';
+import Home from '@/components/sections/home/home';
+import AboutMe from '@/components/sections/about-me/about-me';
 import React from 'react';
 
 export default function Page() {

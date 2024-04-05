@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import selfie from '@/assets/img/selfie.webp';
 import linkedLogo from '@/assets/img/linkedin-logo.webp';
-import ResumeButton from '../resume-button';
+import ResumeButton from '../../resume-button';
 
 export default function Home() {
   return (
