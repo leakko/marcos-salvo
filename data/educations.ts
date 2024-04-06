@@ -23,7 +23,7 @@ export const educations: IEducation[] = [
     title: 'Web Development Bootcamp',
     institution: 'Ironhack',
     dates: 'jan 2021 - sept 2021',
-    description: 'Main technologies:  NodeJS / ExpressJS / MongoDB ReactJS',
+    description: 'Main technologies:  NodeJS | ExpressJS | MongoDB | ReactJS',
     image: ironhackLogo,
   },
   {
