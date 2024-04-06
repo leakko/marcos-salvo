@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Frontend Developer | Marcos Salvo',
-  description: 'Welcome to my website. I am Marcos Rodriguez Salvo, a frontend developer from Spain with 2 years of experience.',
+  description: 'Welcome to my website. I am Marcos Rodriguez Salvo, a frontend developer from Spain with 3 years of experience.',
   authors: [{ name: 'Marcos Rodriguez Salvo' }],
   creator: 'Marcos Rodriguez Salvo',
   publisher: 'Marcos Rodríguez Salvo',
