@@ -15,7 +15,7 @@ export default function Facts() {
         <Accordion type="single" collapsible>
           {
                 facts.map((fact) => (
-                  <AccordionItem value={fact.title}>
+                  <AccordionItem value={fact.title} key={fact.title}>
                     <AccordionTrigger><div className={cn('font-semibold')}>{ fact.title }</div></AccordionTrigger>
                     <AccordionContent><div className={cn('font-normal')}>{ fact.description }</div></AccordionContent>
                   </AccordionItem>
