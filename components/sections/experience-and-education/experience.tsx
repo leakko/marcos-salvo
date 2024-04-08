@@ -9,7 +9,7 @@ export default function Experience() {
         {
             experiences.map((experience, i) => (
               <TimelineItem
-                key={experience.title}
+                key={experience.dates}
                 {...experience}
                 lastItem={i === experiences.length - 1}
               />
