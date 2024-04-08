@@ -8,7 +8,7 @@ export interface Section {
 export enum SectionPathEnum {
   home = '/#home',
   aboutMe = '/#about',
-  workExperience = '/#experience',
-  education = '/#education',
+  workExperience = '/#experience-and-education',
+  education = '/#experience-and-education',
   contactMe = '/#contact',
 }
