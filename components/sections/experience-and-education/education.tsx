@@ -9,7 +9,7 @@ export default function Education() {
         {
             educations.map((education, i) => (
               <TimelineItem
-                key={education.dates}
+                key={education.description}
                 {...education}
                 lastItem={i === educations.length - 1}
                 mainItemsTitle="Main Skills"

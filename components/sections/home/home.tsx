@@ -22,10 +22,10 @@ export default function Home() {
           <div>
             <h1 className={cn('md:text-2xl text-sm font-semibold text-center mb-1 md:mb-2 md:mt-0')}>Hi, I&#39;m Marcos👋</h1>
             <h2 className={cn('md:text-5xl text-primary-200 text-xl font-bold text-center mb-1 md:mb-2')}>
-              Frontend developer
+              Mid Frontend developer
             </h2>
             <h2 className={cn('md:text-2xl text-sm font-semibold text-center md:mt-0')}>
-              With 3 years of experience
+              Specialized in Angular and React.js
             </h2>
           </div>
           <div className={cn('flex gap-5')}>

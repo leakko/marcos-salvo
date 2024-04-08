@@ -5,7 +5,7 @@ export interface IFact {
 export const facts: IFact[] = [
   {
     title: '3 years of experience 👜',
-    description: 'I have 3 years of experience as a frontend developer, working intensively with frameworks like Angular and React in companies like Vodafone.',
+    description: 'I have around 3 years of experience as a frontend developer, working intensively with frameworks like Angular and React in companies like Vodafone.',
   },
   {
     title: 'Software Engeneering Degree 🧑‍🎓',
@@ -13,6 +13,6 @@ export const facts: IFact[] = [
   },
   {
     title: 'Business Adm. & Law graduate 🎓',
-    description: "I'm also a graduate in Business Administration and Law from the University of Sevilla.",
+    description: "I'm also a graduate in Business Administration and Law from the University of Seville.",
   },
 ];

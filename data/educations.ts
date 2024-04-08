@@ -6,7 +6,8 @@ import sevilleUniversityLogo from '@/assets/img/seville-university-logo.webp';
 interface IEducation {
   title: string;
   institution: string;
-  dates: string;
+  initialDate: Date;
+  finalDate?: Date;
   description: string;
   image: StaticImageData;
   mainItems: string[];
@@ -17,7 +18,7 @@ export const educations: IEducation[] = [
   {
     title: "Software Engineering Bachelor's Degree",
     institution: 'Catalonia Open University',
-    dates: 'sept 2021 - Present',
+    initialDate: new Date(2021, 8, 1),
     description: 'The programme of study covers the full software lifecycle: design, implementation, testing and maintenance',
     image: uocLogo,
     mainItems: [
@@ -28,7 +29,8 @@ export const educations: IEducation[] = [
   {
     title: 'Web Development Bootcamp',
     institution: 'Ironhack',
-    dates: 'jan 2021 - sept 2021',
+    initialDate: new Date(2021, 0, 1),
+    finalDate: new Date(2021, 8, 1),
     description: 'Main technologies:  NodeJS | ExpressJS | MongoDB | ReactJS',
     image: ironhackLogo,
     mainItems: [
@@ -41,7 +43,8 @@ export const educations: IEducation[] = [
   {
     title: 'Joint Degree in Business Administration and Law',
     institution: 'Seville University',
-    dates: 'jul 2014 - Sept 2024',
+    initialDate: new Date(2014, 6, 1),
+    finalDate: new Date(2024, 8, 1),
     description: '408 ECTS credits',
     image: sevilleUniversityLogo,
     mainItems: [
