@@ -18,11 +18,11 @@ export default function ExperienceAndEducation() {
         <div className={cn('w-screen flex justify-center items-center gap-5 mb-6')}>
           <h2 className={cn('md:text-5xl text-xl font-bold text-center', { 'text-gray-400': checked })}>
             Experience
-            <span>👔</span>
+            <span className={cn('inline-block w-full md:w-fit')}>👔</span>
           </h2>
           <Switch checked={checked} onCheckedChange={onCheckedChange} />
           <h2 className={cn('md:text-5xl text-xl font-bold text-center flex flex-col-reverse md:block', { 'text-gray-400': !checked })}>
-            <span>✍️</span>
+            <span className={cn('inline-block w-full md:w-fit')}>✍️</span>
             {' '}
             Education
           </h2>

@@ -20,7 +20,7 @@ export const experiences: IExperience[] = [
     institution: 'Vodafone',
     dates: 'aug 2022 - Present',
     image: vodafoneLogo,
-    description: "Maintenance and development of features for Vodafone's website, using Angular 15+ and Stencil.js as main technologies",
+    description: "Maintenance and development of features for Vodafone's website, using Angular 15+ and React.js as main technologies",
     mainItems: [
       "Maintain and develop features for Vodafone's website,using Angular 15+ and TypeScript as main technologies",
       'Manage big sets of customers and products data using Redux (NgRx)',
