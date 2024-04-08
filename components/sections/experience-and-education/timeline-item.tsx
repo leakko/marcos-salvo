@@ -38,7 +38,7 @@ const TimelineItem: FC<TimelineItemProps> = ({
         { title }
       </h3>
       <h2 className={cn('text-xs md:text-sm text-white/60')}>{ dates }</h2>
-      <Accordion type="single" collapsible className={cn('max-w-4xl')}>
+      <Accordion type="single" collapsible className={cn('w-full')}>
         <AccordionItem value="item-1">
           <AccordionTrigger>{ description }</AccordionTrigger>
           <AccordionContent>
