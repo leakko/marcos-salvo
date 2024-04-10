@@ -17,28 +17,37 @@ interface IExperience {
 
 export const experiences: IExperience[] = [
   {
-    title: 'Front-end developer',
+    title: 'Frontend developer (React Native)',
+    institution: 'Vodafone',
+    initialDate: new Date(2024, 3, 1),
+    image: vodafoneLogo,
+    description: "Development of Vodafone's mobile apps",
+    mainItems: [
+      "Development of features for Vodafone's mobile app for companies (Mi Vodafone Business) using React Native.",
+    ],
+  },
+  {
+    title: 'Frontend developer (Angular)',
     institution: 'Vodafone',
     initialDate: new Date(2022, 7, 1),
+    finalDate: new Date(2024, 3, 1),
     image: vodafoneLogo,
     description: "Maintenance and development of features for Vodafone's website, using Angular 15+ and React.js as main technologies",
     mainItems: [
       "Maintain and develop features for Vodafone's website,using Angular 15+ and TypeScript as main technologies",
       'Manage big sets of customers and products data using Redux (NgRx)',
       'Intensive use of Promises, Observables and RxJs to create reactive asynchronous architectures',
-      'Develop the architecture to send information and events from Vodafone.es to Tealium (data analytics software)',
       'Optimize analytics delivery architecture using Custom Directives, RxJS, and NgRX',
       'Implement Angular good practices as: lazy loading, OnPush change detection, View Manipulation, etc. to make an application that handles big amounts of data properly',
     ],
     secondaryItems: [
       "Develop React componentes for specific pages like Vodafone's rate configurator",
-      'Attend and actively participate in training sessions and masterclasses about React, which cover topics such as Next.js, HOC (Higher-Order Components), Redux, React-Query, Context, Hooks, Custom Hooks, etc',
       'Conduct Angular workshops for colleagues (f.ex. about Virtual DOM manipulation)',
       "Maintain and develop Vodafone's Configurator website using Stencil.js (until 10/2023, when it became legacy)",
     ],
   },
   {
-    title: 'Front-end developer',
+    title: 'Frontend developer (Angular)',
     institution: 'Geograma',
     initialDate: new Date(2022, 0, 1),
     finalDate: new Date(2022, 6, 1),
@@ -51,7 +60,7 @@ export const experiences: IExperience[] = [
     ],
   },
   {
-    title: 'Front-end developer',
+    title: 'Frontend developer (Angular)',
     institution: 'GuadalTech',
     initialDate: new Date(2021, 9, 1),
     finalDate: new Date(2022, 1, 1),

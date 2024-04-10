@@ -9,7 +9,7 @@ export const facts: IFact[] = [
   },
   {
     title: 'Software Engeneering Degree 🧑‍🎓',
-    description: "I'm currently studying a Software Engineering degree at the Open University of Catalonia.",
+    description: "I'm currently studying a Software Engineering bachelor's degree at the Open University of Catalonia.",
   },
   {
     title: 'Business Adm. & Law graduate 🎓',

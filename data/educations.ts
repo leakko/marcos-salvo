@@ -45,7 +45,7 @@ export const educations: IEducation[] = [
     institution: 'Seville University',
     initialDate: new Date(2014, 6, 1),
     finalDate: new Date(2024, 8, 1),
-    description: '408 ECTS credits',
+    description: 'Joint degree of 408 ECTS credits (10.200 hours)',
     image: sevilleUniversityLogo,
     mainItems: [
       `With the Double Degree in Business Administration and Law, you'll earn two official degrees and define a multifaceted 
