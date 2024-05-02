@@ -7,7 +7,7 @@ import ResumeButton from '../../resume-button';
 export default function Home() {
   return (
     <section id="home" className={cn('flex flex-col py-4 items-center min-h-[calc(100vh-59px)] justify-center bg-gradient-to-br from-primary-500 to-primary')}>
-      <div className={cn('max-w-7xl mx-auto w-screen flex items-center gap-2 md:gap-20 flex-col md:flex-row justify-center')}>
+      <div className={cn('max-w-7xl mx-auto w-11/12 flex items-center gap-2 md:gap-12 flex-col md:flex-row justify-center')}>
         <div className={cn('relative w-32 md:w-60 h-32 md:h-60 mb-3 flex')}>
           <Image
             src={selfie}
@@ -15,7 +15,7 @@ export default function Home() {
             fill
             sizes="(min-width: 1024px) 16rem, 8rem"
             priority
-            className={cn('rounded-full object-contain border-solid border-2 border-white')}
+            className={cn('rounded-full object-contain border-solid border-2 border-white bg-white')}
           />
         </div>
         <div className={cn('flex flex-col items-center gap-4')}>
