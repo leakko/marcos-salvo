@@ -48,9 +48,9 @@ export const educations: IEducation[] = [
     description: 'Joint degree of 408 ECTS credits (10.200 hours)',
     image: sevilleUniversityLogo,
     mainItems: [
-      `With the Double Degree in Business Administration and Law, you'll earn two official degrees and define a multifaceted 
-      and differentiating professional profile for yourself: Mastering both the legal and business fields will enable you to provide a lawyer's 
-      perspective to business projects and, at the same time, apply your business acumen to legal matters`,
+      `The Dual Degree in Business Administration & Laws is a challenging program that prepares students to 
+      deeply comprehend the relation between business and law. This program will prepare students to understand 
+      and experience the international business from both a management and a legal perspective.`,
     ],
   },
 ];
