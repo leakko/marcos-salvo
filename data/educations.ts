@@ -6,6 +6,7 @@ import sevilleUniversityLogo from '@/assets/img/seville-university-logo.webp';
 interface IEducation {
   title: string;
   institution: string;
+  institutionUrl: string;
   initialDate: Date;
   finalDate?: Date;
   description: string;
@@ -18,6 +19,7 @@ export const educations: IEducation[] = [
   {
     title: "Software Engineering Bachelor's Degree",
     institution: 'Catalonia Open University',
+    institutionUrl: 'https://www.uoc.edu/portal/en/index.html',
     initialDate: new Date(2021, 8, 1),
     description: 'The programme of study covers the full software lifecycle: design, implementation, testing and maintenance',
     image: uocLogo,
@@ -29,6 +31,7 @@ export const educations: IEducation[] = [
   {
     title: 'Web Development Bootcamp',
     institution: 'Ironhack',
+    institutionUrl: 'https://www.ironhack.com/en',
     initialDate: new Date(2021, 0, 1),
     finalDate: new Date(2021, 8, 1),
     description: 'Main technologies:  NodeJS | ExpressJS | MongoDB | ReactJS',
@@ -43,6 +46,7 @@ export const educations: IEducation[] = [
   {
     title: 'Joint Degree in Business Administration and Law',
     institution: 'Seville University',
+    institutionUrl: 'https://www.us.es/',
     initialDate: new Date(2014, 6, 1),
     finalDate: new Date(2024, 8, 1),
     description: 'Joint degree of 408 ECTS credits (10.200 hours)',

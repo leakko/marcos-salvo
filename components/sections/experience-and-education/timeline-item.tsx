@@ -13,6 +13,7 @@ import {
 interface TimelineItemProps {
   title: string;
   institution: string;
+  institutionUrl: string;
   initialDate: Date;
   finalDate?: Date;
   showDuration?: boolean;
@@ -26,7 +27,7 @@ interface TimelineItemProps {
 }
 
 const TimelineItem: FC<TimelineItemProps> = ({
-  title, institution, initialDate, finalDate, image, lastItem, mainItemsTitle,
+  title, institution, institutionUrl, initialDate, finalDate, image, lastItem, mainItemsTitle,
   description, secondaryItemsTitle, mainItems, secondaryItems, showDuration,
 }) => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -41,7 +42,7 @@ const TimelineItem: FC<TimelineItemProps> = ({
       </span>
       <div className={cn('pl-3')}>
         <h3 className={cn('md:text-2xl text-sm font-semibold text-primary-200 leading-tight')}>
-          { institution }
+          <a href={institutionUrl}>{ institution }</a>
           {' '}
           |
           {' '}

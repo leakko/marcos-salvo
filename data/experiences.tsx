@@ -7,6 +7,7 @@ import guadaltechLogo from '@/assets/img/guadaltech-logo.webp';
 interface IExperience {
   title: string;
   institution: string;
+  institutionUrl: string;
   initialDate: Date;
   finalDate?: Date;
   image: StaticImageData;
@@ -19,6 +20,7 @@ export const experiences: IExperience[] = [
   {
     title: 'Frontend developer (React)',
     institution: 'Vodafone',
+    institutionUrl: 'https://www.vodafone.es/',
     initialDate: new Date(2024, 3, 1),
     image: vodafoneLogo,
     description: "Development of Vodafone's apps for companies",
@@ -30,6 +32,7 @@ export const experiences: IExperience[] = [
   {
     title: 'Frontend developer (Angular)',
     institution: 'Vodafone',
+    institutionUrl: 'https://www.vodafone.es/',
     initialDate: new Date(2022, 7, 1),
     finalDate: new Date(2024, 3, 1),
     image: vodafoneLogo,
@@ -50,6 +53,7 @@ export const experiences: IExperience[] = [
   {
     title: 'Frontend developer (Angular)',
     institution: 'Geograma',
+    institutionUrl: 'https://www.geograma.com/',
     initialDate: new Date(2022, 0, 1),
     finalDate: new Date(2022, 6, 1),
     image: geogramaLogo,
@@ -63,6 +67,7 @@ export const experiences: IExperience[] = [
   {
     title: 'Frontend developer (Angular)',
     institution: 'GuadalTech',
+    institutionUrl: 'https://www.guadaltech.es/',
     initialDate: new Date(2021, 9, 1),
     finalDate: new Date(2022, 1, 1),
     image: guadaltechLogo,
