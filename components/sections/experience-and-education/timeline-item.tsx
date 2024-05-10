@@ -57,13 +57,21 @@ const TimelineItem: FC<TimelineItemProps> = ({
               <div className={cn('max-w-4xl')}>
                 <h3 className={cn('font-semibold text-primary-200')}>{ mainItemsTitle }</h3>
                 <ul className={cn('pl-8 mb-2 list-disc')}>
-                  { mainItems.map((activity) => <li key={activity}>{ activity }</li>) }
+                  {
+                    mainItems.map((activity) => (
+                      <li key={activity} dangerouslySetInnerHTML={{ __html: activity }} />
+                    ))
+                  }
                 </ul>
                 { secondaryItems && (
                   <>
                     <h3 className={cn('font-semibold text-primary-200')}>{ secondaryItemsTitle }</h3>
                     <ul className={cn('pl-8 mb-2 list-disc')}>
-                      { secondaryItems.map((activity) => <li key={activity}>{ activity }</li>) }
+                      {
+                        secondaryItems.map((activity) => (
+                          <li key={activity} dangerouslySetInnerHTML={{ __html: activity }} />
+                        ))
+                      }
                     </ul>
                   </>
                 ) }

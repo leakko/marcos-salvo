@@ -23,8 +23,8 @@ export const experiences: IExperience[] = [
     image: vodafoneLogo,
     description: "Development of Vodafone's apps for companies",
     mainItems: [
-      "Development of Vodafone's Website for companies using React (https://www.vodafone.es/c/empresas/es/mi-vodafone-business/)",
-      "Development of Vodafone's mobile app for companies using React Native.",
+      "Development of <a href='https://www.vodafone.es/c/empresas/es/mi-vodafone-business/'>Vodafone's Website for companies</a> using React",
+      "Development of <a href='https://play.google.com/store/apps/details?id=com.edc&hl=es&gl=US&pli=1'>Vodafone's mobile app for companies</a> using React Native.",
     ],
   },
   {
@@ -35,15 +35,15 @@ export const experiences: IExperience[] = [
     image: vodafoneLogo,
     description: "Maintenance and development of features for Vodafone's website, using Angular 15+ and React.js as main technologies",
     mainItems: [
-      "Maintain and develop features for Vodafone's website,using Angular 15+ and TypeScript as main technologies",
+      "Maintain and develop features for <a href='https://www.vodafone.es/c/particulares/es/'>Vodafone's website</a>, using Angular 15+ and TypeScript as main technologies",
       'Manage big sets of customers and products data using Redux (NgRx)',
       'Intensive use of Promises, Observables and RxJs to create reactive asynchronous architectures',
       'Optimize analytics delivery architecture using Custom Directives, RxJS, and NgRX',
       'Implement Angular good practices as: lazy loading, OnPush change detection, View Manipulation, etc. to make an application that handles big amounts of data properly',
     ],
     secondaryItems: [
-      "Develop React componentes for specific pages like Vodafone's rate configurator",
-      'Conduct Angular workshops for colleagues (f.ex. about Virtual DOM manipulation)',
+      "Develop React components for specific pages like Vodafone's rate configurator",
+      "Conduct Angular workshops for colleagues (f.ex. about <a href='https://medium.com/@marcossalvo95/understanding-angular-view-dom-manipulation-in-depth-analysis-12c1c4f2f5de'>Virtual DOM manipulation</a>)",
       "Maintain and develop Vodafone's Configurator website using Stencil.js (until 10/2023, when it became legacy)",
     ],
   },
@@ -55,9 +55,9 @@ export const experiences: IExperience[] = [
     image: geogramaLogo,
     description: 'Develop the frontend side of GIS (Geographic Information Systems), mainly using Angular framework',
     mainItems: [
-      'Main frontend developer of the Álava (province of Spain) public map visualizer (Angular).',
+      "Main frontend developer of <a href='https://geo.araba.eus/geobisorea/'>GeoAraba</a>, the Álava's (province of Spain) public map visualizer (Angular).",
       'Develop the frontend side of GIS (Geographic Information Systems), mainly using Angular framework.',
-      'Use OpenLayers to transform Geographic Information into maps.',
+      'Use <a href"https://openlayers.org/">OpenLayers</a> to transform Geographic Information into maps.',
     ],
   },
   {
