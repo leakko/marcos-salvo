@@ -15,7 +15,7 @@ import { formSchema } from '@/models/form.schema';
 import { useForm } from 'react-hook-form';
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export function ContactMeForm() {
@@ -29,6 +29,11 @@ export function ContactMeForm() {
       message: '',
     },
   });
+
+  const resetForm = useCallback(() => {
+    form.reset();
+    setTimeout(() => setFormState('idle'), 5000);
+  }, [form]);
 
   const getSubmitStatusJsx = () => {
     if (formState === 'idle') {
@@ -46,7 +51,7 @@ export function ContactMeForm() {
     emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string, 'form', process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)
       .then(() => {
         setFormState('submittedOk');
-        form.reset();
+        resetForm();
       }, () => {
         setFormState('submittedKo');
       });
