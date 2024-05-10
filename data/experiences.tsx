@@ -17,13 +17,14 @@ interface IExperience {
 
 export const experiences: IExperience[] = [
   {
-    title: 'Frontend developer (React Native)',
+    title: 'Frontend developer (React)',
     institution: 'Vodafone',
     initialDate: new Date(2024, 3, 1),
     image: vodafoneLogo,
     description: "Development of Vodafone's mobile apps",
     mainItems: [
-      "Development of features for Vodafone's mobile app for companies (Mi Vodafone Business) using React Native.",
+      "Development of Vodafone's Website for companies (https://www.vodafone.es/c/empresas/es/mi-vodafone-business/)",
+      "Development of Vodafone's mobile app for companies using React Native.",
     ],
   },
   {
