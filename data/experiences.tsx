@@ -21,9 +21,9 @@ export const experiences: IExperience[] = [
     institution: 'Vodafone',
     initialDate: new Date(2024, 3, 1),
     image: vodafoneLogo,
-    description: "Development of Vodafone's mobile apps",
+    description: "Development of Vodafone's apps for companies",
     mainItems: [
-      "Development of Vodafone's Website for companies (https://www.vodafone.es/c/empresas/es/mi-vodafone-business/)",
+      "Development of Vodafone's Website for companies using React (https://www.vodafone.es/c/empresas/es/mi-vodafone-business/)",
       "Development of Vodafone's mobile app for companies using React Native.",
     ],
   },
