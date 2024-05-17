@@ -61,7 +61,7 @@ export const experiences: IExperience[] = [
     mainItems: [
       "Main frontend developer of <a href='https://geo.araba.eus/geobisorea/'>GeoAraba</a>, the Álava's (province of Spain) public map visualizer (Angular).",
       'Develop the frontend side of GIS (Geographic Information Systems), mainly using Angular framework.',
-      'Use <a href"https://openlayers.org/">OpenLayers</a> to transform Geographic Information into maps.',
+      'Use <a href="https://openlayers.org/">OpenLayers</a> to transform Geographic Information into maps.',
     ],
   },
   {
