@@ -47,7 +47,7 @@ export const educations: IEducation[] = [
     title: 'Joint Degree in Business Administration and Law',
     institution: 'Seville University',
     institutionUrl: 'https://www.us.es/',
-    initialDate: new Date(2014, 6, 1),
+    initialDate: new Date(2014, 8, 1),
     finalDate: new Date(2024, 8, 1),
     description: 'Joint degree of 408 ECTS credits (10.200 hours)',
     image: sevilleUniversityLogo,
