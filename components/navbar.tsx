@@ -6,17 +6,26 @@ import logo from '@/assets/img/logo.webp';
 import { sections } from '@/data/sections';
 import useScreenSize from '@/hooks/use-screen-resize';
 import Link from 'next/link';
+import { useToggleContext } from '@/app/providers/toggle';
+import { Section } from '@/models/section';
 import { DropdownMenuRadio } from './drop-down-menu';
 
 export function Navbar() {
   const { width } = useScreenSize();
+  const { setToggle } = useToggleContext();
+
+  const onLinkClick = (section: Section) => {
+    const name = section.name.toLocaleLowerCase();
+    if (['experience', 'education'].includes(name)) setToggle(name as 'experience' | 'education');
+  };
+
   const getMenu = () => {
     if (!width) return null;
     return width < 640
       ? <DropdownMenuRadio />
       : sections.map((sect) => (
         <li key={sect.id}>
-          <Link className={cn('no-underline hover:text-white')} href={sect.path}>{sect.name}</Link>
+          <Link className={cn('no-underline hover:text-white')} href={sect.path} onClick={() => onLinkClick(sect)}>{sect.name}</Link>
         </li>
       ));
   };

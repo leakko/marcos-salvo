@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import { Navbar } from '@/components/navbar';
+import { ToggleProvider } from './providers/toggle';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, 'bg-primary text-white m-0 overflow-scroll')}>
-        <Navbar />
-        <main>
-          {children}
-        </main>
+        <ToggleProvider>
+          <Navbar />
+          <main>
+            {children}
+          </main>
+        </ToggleProvider>
       </body>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-NWLC6RT53D" strategy="afterInteractive" />
       <Script id="data-layer" strategy="afterInteractive">

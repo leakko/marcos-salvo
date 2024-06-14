@@ -1,16 +1,18 @@
 'use client';
 
-import { useState } from 'react';
 import { Switch } from '@/components/ui/switch';
 
 import Education from '@/components/sections/experience-and-education/education';
 import Experience from '@/components/sections/experience-and-education/experience';
 
 import { cn } from '@/lib/utils';
+import { useToggleContext } from '@/app/providers/toggle';
 
 export default function ExperienceAndEducation() {
-  const [checked, setChecked] = useState(false);
-  const onCheckedChange = (doCheck: boolean) => setChecked(doCheck);
+  const { toggle, setToggle } = useToggleContext();
+  const checked = toggle === 'education';
+
+  const onCheckedChange = (doCheck: boolean) => setToggle(doCheck ? 'education' : 'experience');
 
   return (
     <section id="experience-and-education" className={cn('flex flex-col justify-center md:items-center text-left py-16 px-8')}>
