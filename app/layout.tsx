@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import { Navbar } from '@/components/navbar';
-import { ToggleProvider } from './providers/toggle';
+import { ToggleProvider } from '../providers/toggle';
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -6,7 +6,7 @@ import logo from '@/assets/img/logo.webp';
 import { sections } from '@/data/sections';
 import useScreenSize from '@/hooks/use-screen-resize';
 import Link from 'next/link';
-import { useToggleContext } from '@/app/providers/toggle';
+import { useToggleContext } from '@/providers/toggle';
 import { Section } from '@/models/section';
 import { DropdownMenuRadio } from './drop-down-menu';
 

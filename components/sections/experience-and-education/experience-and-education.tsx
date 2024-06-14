@@ -6,7 +6,7 @@ import Education from '@/components/sections/experience-and-education/education'
 import Experience from '@/components/sections/experience-and-education/experience';
 
 import { cn } from '@/lib/utils';
-import { useToggleContext } from '@/app/providers/toggle';
+import { useToggleContext } from '@/providers/toggle';
 
 export default function ExperienceAndEducation() {
   const { toggle, setToggle } = useToggleContext();
