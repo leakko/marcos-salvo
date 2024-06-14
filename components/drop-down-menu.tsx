@@ -18,8 +18,13 @@ import {
 import { cn } from '@/lib/utils';
 import { sections } from '@/data/sections';
 import { usePathname, useRouter } from 'next/navigation';
+import { Section } from '../models/section';
 
-export function DropdownMenuRadio() {
+interface Props {
+  onLinkClick: (section: Section) => void;
+}
+
+export const DropdownMenuRadio: React.FC<Props> = ({ onLinkClick }) => {
   const path = usePathname();
   const value = path.replace('/', '') || 'about-me';
   const router = useRouter();
@@ -39,7 +44,7 @@ export function DropdownMenuRadio() {
             <DropdownMenuRadioGroup value={value} onValueChange={onValueSelected}>
               {
                 sections.map((sect, i) => (
-                  <div key={sect.id}>
+                  <div role="button" tabIndex={i} key={sect.id} onClick={() => onLinkClick(sect)}>
                     <DropdownMenuRadioItem value={sect.path} className={cn('hover:cursor-pointer')}>
                       {sect.name}
                     </DropdownMenuRadioItem>
@@ -53,4 +58,4 @@ export function DropdownMenuRadio() {
       </DropdownMenu>
     </nav>
   );
-}
+};

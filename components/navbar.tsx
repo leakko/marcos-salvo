@@ -22,7 +22,7 @@ export function Navbar() {
   const getMenu = () => {
     if (!width) return null;
     return width < 640
-      ? <DropdownMenuRadio />
+      ? <DropdownMenuRadio onLinkClick={onLinkClick} />
       : sections.map((sect) => (
         <li key={sect.id}>
           <Link className={cn('no-underline hover:text-white')} href={sect.path} onClick={() => onLinkClick(sect)}>{sect.name}</Link>
