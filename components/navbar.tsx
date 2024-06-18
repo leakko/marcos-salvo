@@ -30,7 +30,7 @@ export function Navbar() {
       ));
   };
   return (
-    <nav className={cn('w-full bg-primary/95 py-4 px-8 border-b-2 border-white/60 sticky top-0 z-10 flex justify-center')}>
+    <nav className={cn('w-full bg-primary/95 py-4 px-8 border-b-2 border-white/60 fixed top-0 z-10 flex justify-center')}>
       <div className={cn('w-full max-w-5xl flex justify-between')}>
         <Link href={sections[0].path}>
           <div className={cn('relative mr-2')} style={{ width: '100px', height: '25px' }}>
