@@ -13,12 +13,12 @@ export function TechStack() {
   const images = [
     { src: reactLogo, alt: 'React' },
     { src: angularLogo, alt: 'Angular' },
-    { src: javascriptLogo, alt: 'Javascript' },
-    { src: webpackLogo, alt: 'Webpack' },
-    { src: reduxLogo, alt: 'Redux' },
-    { src: typeScriptLogo, alt: 'Typescript' },
-    { src: stencilLogo, alt: 'Stencil.js' },
     { src: nextLogo, alt: 'Next.js' },
+    { src: stencilLogo, alt: 'Stencil.js' },
+    { src: reduxLogo, alt: 'Redux' },
+    { src: webpackLogo, alt: 'Webpack' },
+    { src: typeScriptLogo, alt: 'Typescript' },
+    { src: javascriptLogo, alt: 'Javascript' },
   ];
 
   return (
