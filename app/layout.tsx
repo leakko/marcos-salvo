@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, 'bg-primary text-white m-0 overflow-scroll')}>
+      <body className={cn(inter.className, 'bg-primary text-white m-0 overflow-auto')}>
         <ToggleProvider>
           <Navbar />
           <main>

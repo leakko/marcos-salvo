@@ -7,16 +7,18 @@ import stencilLogo from '@/assets/img/stencil-logo.webp';
 import reactLogo from '@/assets/img/react-logo.webp';
 import nextLogo from '@/assets/img/next-logo.webp';
 import rxjsLogo from '@/assets/img/rxjs-logo.webp';
+import webpackLogo from '@/assets/img/webpack-logo.webp'
 import { cn } from '@/lib/utils';
 
 export function TechStack() {
   const images = [
-    { src: javascriptLogo, alt: 'Javascript' },
+    { src: reactLogo, alt: 'React' },
     { src: angularLogo, alt: 'Angular' },
+    { src: javascriptLogo, alt: 'Javascript' },
+    { src: webpackLogo, alt: 'Webpack' },
     { src: reduxLogo, alt: 'Redux' },
     { src: typeScriptLogo, alt: 'Typescript' },
     { src: stencilLogo, alt: 'Stencil.js' },
-    { src: reactLogo, alt: 'React' },
     { src: nextLogo, alt: 'Next.js' },
     { src: rxjsLogo, alt: 'Rxjs' },
   ];
