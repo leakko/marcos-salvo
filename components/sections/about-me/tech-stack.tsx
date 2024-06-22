@@ -7,7 +7,7 @@ import stencilLogo from '@/assets/img/stencil-logo.webp';
 import reactLogo from '@/assets/img/react-logo.webp';
 import nextLogo from '@/assets/img/next-logo.webp';
 import rxjsLogo from '@/assets/img/rxjs-logo.webp';
-import webpackLogo from '@/assets/img/webpack-logo.webp'
+import webpackLogo from '@/assets/img/webpack-logo.webp';
 import { cn } from '@/lib/utils';
 
 export function TechStack() {
