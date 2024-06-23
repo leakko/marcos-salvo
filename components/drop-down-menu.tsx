@@ -44,7 +44,7 @@ export const DropdownMenuRadio: React.FC<Props> = ({ onLinkClick }) => {
             <DropdownMenuRadioGroup value={value} onValueChange={onValueSelected}>
               {
                 sections.map((sect, i) => (
-                  <div role="button" tabIndex={i} key={sect.id} onClick={() => onLinkClick(sect)} className={cn(i % 2 === 1 && 'bg-primary-500')}>
+                  <div role="button" tabIndex={i} key={sect.id} onClick={() => onLinkClick(sect)}>
                     <DropdownMenuRadioItem value={sect.path} className={cn('hover:cursor-pointer')}>
                       {sect.name}
                     </DropdownMenuRadioItem>
