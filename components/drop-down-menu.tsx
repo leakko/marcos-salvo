@@ -40,11 +40,11 @@ export const DropdownMenuRadio: React.FC<Props> = ({ onLinkClick }) => {
           </button>
         </DropdownMenuTrigger>
         <DropdownMenuPortal>
-          <DropdownMenuContent className="w-56" align="end">
+          <DropdownMenuContent className={cn('w-56 bg-primary text-white border-y-4')} align="end">
             <DropdownMenuRadioGroup value={value} onValueChange={onValueSelected}>
               {
                 sections.map((sect, i) => (
-                  <div role="button" tabIndex={i} key={sect.id} onClick={() => onLinkClick(sect)}>
+                  <div role="button" tabIndex={i} key={sect.id} onClick={() => onLinkClick(sect)} className={cn(i % 2 === 1 && 'bg-primary-500')}>
                     <DropdownMenuRadioItem value={sect.path} className={cn('hover:cursor-pointer')}>
                       {sect.name}
                     </DropdownMenuRadioItem>
