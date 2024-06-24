@@ -15,13 +15,13 @@ export function Navbar() {
   const { setToggle } = useToggleContext();
 
   const onLinkClick = (section: Section) => {
-    const name = section.name.toLocaleLowerCase();
-    if (['experience', 'education'].includes(name)) setToggle(name as 'experience' | 'education');
+    const { name } = section;
+    if (['👔 Experience', '✍️ Education'].includes(name)) setToggle(name as '👔 Experience' | '✍️ Education');
   };
 
   const getMenu = () => {
     if (!width) return null;
-    return width < 640
+    return width < 700
       ? <DropdownMenuRadio onLinkClick={onLinkClick} />
       : sections.map((sect) => (
         <li key={sect.id}>

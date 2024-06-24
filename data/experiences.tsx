@@ -25,7 +25,7 @@ export const experiences: IExperience[] = [
     image: vodafoneLogo,
     description: "Development of Vodafone's apps for companies",
     mainItems: [
-      "Development of <a href='https://www.vodafone.es/c/empresas/es/mi-vodafone-business/'>Vodafone's Website for companies</a> using React",
+      "Development of <a href='https://www.vodafone.es/c/empresas/es/mi-vodafone-business/'>Vodafone's Website for companies</a> using React and a Micro-Frontend architecture based on Module Federation.",
       "Development of <a href='https://play.google.com/store/apps/details?id=com.edc&hl=es&gl=US&pli=1'>Vodafone's mobile app for companies</a> using React Native.",
     ],
   },

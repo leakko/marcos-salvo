@@ -40,7 +40,7 @@ export const DropdownMenuRadio: React.FC<Props> = ({ onLinkClick }) => {
           </button>
         </DropdownMenuTrigger>
         <DropdownMenuPortal>
-          <DropdownMenuContent className="w-56" align="end">
+          <DropdownMenuContent className={cn('w-56 bg-primary text-white border-y-4')} align="end">
             <DropdownMenuRadioGroup value={value} onValueChange={onValueSelected}>
               {
                 sections.map((sect, i) => (

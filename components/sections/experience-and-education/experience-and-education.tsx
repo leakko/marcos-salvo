@@ -10,9 +10,9 @@ import { useToggleContext } from '@/providers/toggle';
 
 export default function ExperienceAndEducation() {
   const { toggle, setToggle } = useToggleContext();
-  const checked = toggle === 'education';
+  const checked = toggle === '✍️ Education';
 
-  const onCheckedChange = (doCheck: boolean) => setToggle(doCheck ? 'education' : 'experience');
+  const onCheckedChange = (doCheck: boolean) => setToggle(doCheck ? '✍️ Education' : '👔 Experience');
 
   return (
     <section id="experience-and-education" className={cn('flex flex-col justify-center md:items-center text-left py-16 px-8')}>

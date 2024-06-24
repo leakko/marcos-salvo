@@ -3,12 +3,12 @@
 import { createContext, useContext, useState } from 'react';
 
 export interface ToggleContext {
-  toggle: 'experience' | 'education';
-  setToggle: (toggle: 'experience' | 'education') => void;
+  toggle: '👔 Experience' | '✍️ Education';
+  setToggle: (toggle: '👔 Experience' | '✍️ Education') => void;
 }
 
 export const toggleContext = createContext<ToggleContext>({
-  toggle: 'experience',
+  toggle: '👔 Experience',
   setToggle: () => {},
 });
 
@@ -21,7 +21,7 @@ export const useToggleContext = () => {
 };
 
 export const ToggleProvider = ({ children }: { children: React.ReactNode }) => {
-  const [toggle, setToggle] = useState<'experience' | 'education'>('experience');
+  const [toggle, setToggle] = useState<'👔 Experience' | '✍️ Education'>('👔 Experience');
 
   const toggleContextValue: ToggleContext = {
     toggle,
