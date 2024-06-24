@@ -21,7 +21,7 @@ export const experiences: IExperience[] = [
     title: 'Frontend developer (React)',
     institution: 'Vodafone',
     institutionUrl: 'https://www.vodafone.es/',
-    initialDate: new Date(2024, 3, 1),
+    initialDate: new Date(2024, 0, 1),
     image: vodafoneLogo,
     description: "Development of Vodafone's apps for companies",
     mainItems: [
@@ -34,7 +34,7 @@ export const experiences: IExperience[] = [
     institution: 'Vodafone',
     institutionUrl: 'https://www.vodafone.es/',
     initialDate: new Date(2022, 7, 1),
-    finalDate: new Date(2024, 3, 1),
+    finalDate: new Date(2024, 0, 1),
     image: vodafoneLogo,
     description: "Maintenance and development of features for Vodafone's website, using Angular 15+ and React.js as main technologies",
     mainItems: [
