@@ -23,7 +23,7 @@ export function TechStack() {
 
   return (
     <div className={cn('md:w-2/5')}>
-      <h2 className={cn('md:text-2xl text-sm font-semibold text-primary-200 mb-4')}>Tech Stack.</h2>
+      <h2 className={cn('md:text-2xl text-sm font-semibold text-primary-100 mb-4')}>Tech Stack.</h2>
       <div className={cn('flex items-center gap-5 flex-wrap')}>
         {
             images.map((image) => (

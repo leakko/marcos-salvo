@@ -21,7 +21,7 @@ export default function Home() {
         <div className={cn('flex flex-col items-center gap-4')}>
           <div>
             <h1 className={cn('md:text-2xl text-sm font-semibold text-center mb-1 md:mb-2 md:mt-0')}>Hi, I&#39;m Marcos👋</h1>
-            <h2 className={cn('md:text-5xl text-primary-200 text-xl font-bold text-center mb-1 md:mb-2')}>
+            <h2 className={cn('md:text-5xl text-primary-100 text-xl font-bold text-center mb-1 md:mb-2')}>
               Mid Frontend developer
             </h2>
             <h2 className={cn('md:text-2xl text-sm font-semibold text-center md:mt-0')}>

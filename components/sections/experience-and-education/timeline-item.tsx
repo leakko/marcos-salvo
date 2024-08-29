@@ -41,7 +41,7 @@ const TimelineItem: FC<TimelineItemProps> = ({
         <Image src={image} alt="Business Icon" width={50} height={50} />
       </span>
       <div className={cn('pl-3')}>
-        <h3 className={cn('md:text-2xl text-sm font-semibold text-primary-200 leading-tight')}>
+        <h3 className={cn('md:text-2xl text-sm font-semibold text-primary-100 leading-tight')}>
           <a href={institutionUrl}>{ institution }</a>
           {' '}
           |
@@ -56,7 +56,7 @@ const TimelineItem: FC<TimelineItemProps> = ({
             <AccordionTrigger>{ description }</AccordionTrigger>
             <AccordionContent>
               <div className={cn('max-w-4xl')}>
-                <h3 className={cn('font-semibold text-primary-200')}>{ mainItemsTitle }</h3>
+                <h3 className={cn('font-semibold text-primary-100')}>{ mainItemsTitle }</h3>
                 <ul className={cn('pl-8 mb-2 list-disc')}>
                   {
                     mainItems.map((activity) => (
@@ -66,7 +66,7 @@ const TimelineItem: FC<TimelineItemProps> = ({
                 </ul>
                 { secondaryItems && (
                   <>
-                    <h3 className={cn('font-semibold text-primary-200')}>{ secondaryItemsTitle }</h3>
+                    <h3 className={cn('font-semibold text-primary-100')}>{ secondaryItemsTitle }</h3>
                     <ul className={cn('pl-8 mb-2 list-disc')}>
                       {
                         secondaryItems.map((activity) => (
