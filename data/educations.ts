@@ -17,7 +17,7 @@ interface IEducation {
 
 export const educations: IEducation[] = [
   {
-    title: "Software Engineering Bachelor's Degree",
+    title: "Software Development Bachelor's Degree",
     institution: 'Catalonia Open University',
     institutionUrl: 'https://www.uoc.edu/portal/en/index.html',
     initialDate: new Date(2021, 8, 1),
