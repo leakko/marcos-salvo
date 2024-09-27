@@ -3,6 +3,7 @@ import { StaticImageData } from 'next/image';
 import geogramaLogo from '@/assets/img/geograma-logo.webp';
 import vodafoneLogo from '@/assets/img/vodafone-logo.webp';
 import guadaltechLogo from '@/assets/img/guadaltech-logo.webp';
+import caixabankLogo from '@/assets/img/caixabank-logo.webp';
 
 interface IExperience {
   title: string;
@@ -19,9 +20,21 @@ interface IExperience {
 export const experiences: IExperience[] = [
   {
     title: 'Frontend developer (React)',
+    institution: 'CaixaBank Tech',
+    institutionUrl: 'https://caixabanktech.com/es/pagina-de-inicio/',
+    initialDate: new Date(2024, 9, 1),
+    image: caixabankLogo,
+    description: 'Internal frontend developer',
+    mainItems: [
+      "Frontend development of caixabank group's internal applications using React.js",
+    ],
+  },
+  {
+    title: 'Frontend developer (React)',
     institution: 'Vodafone',
     institutionUrl: 'https://www.vodafone.es/',
     initialDate: new Date(2024, 0, 1),
+    finalDate: new Date(2024, 9, 1),
     image: vodafoneLogo,
     description: "Development of Vodafone's apps for companies",
     mainItems: [
